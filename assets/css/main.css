@@ -89,6 +89,7 @@ i.circ-arrow-down {display:inline-block;width:15px;height:16px;background:url(".
 
 .bullet {font-size:12px;}
 .bullet > li[data-bullet="*"] {padding-left:6px;text-indent:-6px;color:#999;}
+.bullet > li[data-bullet="-"] {padding-left:6px;text-indent:-6px;color:#606060;}
 .bullet > li:before {content:attr(data-bullet);}
 .bullet > li em {display:inline-block;padding-left:6px;padding-bottom:3px;font-weight:700;font-style:normal;}
 
@@ -353,6 +354,12 @@ video {
 .popup#popup02 .content p {margin-top:15px;color:#222;}
 .popup#popup02 .content .bullet {margin-top:13px;}
 .popup#popup02 .content .bullet li + li {margin-top:10px;}
+
+.popup#popup03 .scroll {margin-top:13px;height:300px;font-size:12px;line-height:16px;overflow-y:auto;}
+.popup#popup03 .scroll strong {display:block;color:#222;}
+.popup#popup03 .scroll * + strong {margin-top:16px;}
+.popup#popup03 .scroll div {color:#606060;}
+.popup#popup03 .scroll .bullet li {margin-top:4px;}
 
 .move-top {
     opacity: 0;
