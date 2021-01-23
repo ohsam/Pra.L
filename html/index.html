@@ -998,8 +998,36 @@
 										.addTo(controller);
 					</script>
 				</section>
+				
+				<section id="scene16" class="motionContent">
+					<div id="trigger16" class="spacer s0"></div>
+					<div id="animate16">
+						<div class="blank"></div>
+						<div id="animate16_1" class="image">
+							<a href="#none" class="button popupBtn" data-popup-id="popup04">&nbsp;</a>
+							<img src="../assets/img/scene_16_01.png" alt="">
+						</div>
+					</div>
+					<script>
+						// tween_image
+						TweenMax.set("#animate16_1", {opacity:0, top: "140"});
+                        var tween_image = new TimelineMax()
+                            .to("#animate16_1", 3, {top: 60, opacity: 1})
+							.to("#animate16_1", 3, {/*opacity: 0.6,*/ delay: 4})
 
-				TODO: 활용TIP
+						// build scene
+						var sceneOption = {
+							triggerElement: "#trigger16",
+							triggerHook: 0.64,
+							duration: "82%",
+							reverse: true
+						}
+						var scene = new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_image)
+										//.addIndicators({name: "16 (duration: 0)"}) // add indicators (requires plugin)
+										.addTo(controller);
+					</script>
+				</section>
 
 				<section id="scene11" class="motionContent">
 					<div id="trigger11" class="spacer s0"></div>
@@ -1387,66 +1415,6 @@
 
 					</script>
 				</section>
-					
-				<section id="scene16" class="motionContent">
-					<div id="trigger16" class="spacer s0"></div>
-					<div id="animate16">
-						<div class="blank"></div>
-						<div id="animate16_1" class="title white">
-							<h2>다양한 입출력 단자<br />강력한 썬더볼트 4</h2>
-							<p class="small">충전, 데이터 전송, 다양한 주변장치를 더 빠르게<br />연결하는 썬더볼트 4 <br/>슬림하지만 갖출 건 다 갖춘 다양한 입출력 단자 </p>
-						</div>
-						<div id="animate16_2" class="port" style="bottom:0">
-							<span class="image first" style="left:0"><img src="../assets/img/scene_16_01.png" alt=""></span>
-							<span class="image last" style="left:0"><img src="../assets/img/scene_16_02.png" alt=""></span>
-						</div>
-						<div id="animate16_3" class="desc grey">
-							<p class="small indent">USB 3.1 = USB 3.2 Gen 2x1 전송속도 10 Gbps</p>
-							<p class="small indent">USB 4.0 = USB 4 Gen 3x2 전송속도 40 Gbps</p>
-							<p class="small indent">제조사에서 제공한 측정값이며 사용 환경에 따라 달라질 수 있습니다</p>
-						</div>
-					</div>
-					<script>
-						// tween_title
-						TweenMax.set("#animate16_1", {opacity:0, top: "160"});
-                        var tween_title = new TimelineMax()
-                            .to("#animate16_1", 0.8, {top: 60, opacity: 1, ease: Cubic.easeInOut})
-
-						// tween_image
-						TweenMax.set("#animate16_2 .first", {left: "-80px", opacity: 0});
-						var tween_image1 = new TimelineMax()
-							.to("#animate16_2 .first", 0.8, {left:0, opacity: 1, delay: 0.6, ease: Cubic.easeOut})
-
-						TweenMax.set("#animate16_2 .last", {left: "80px", opacity: 0});
-						var tween_image2 = new TimelineMax()
-							.to("#animate16_2 .last", 0.8, {left:0, opacity: 0.8, delay: 1.0, ease: Cubic.easeOut})
-
-						// tween_desc
-						TweenMax.set("#animate16_3", {bottom: "-30px", opacity: 0});
-						var tween_desc = new TimelineMax()
-							.to("#animate16_3", 0.5, {bottom: "0", opacity: 1, delay: 1.6, ease: Cubic.easeOut})
-
-						// build scene
-						var sceneOption = {
-							triggerElement: "#trigger16",
-							triggerHook: 0.6,
-							reverse: true
-						}
-						var scene = new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_title)
-										//.addIndicators({name: "16 (duration: 0)"}) // add indicators (requires plugin)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_image1)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_image2)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_desc)
-										.addTo(controller);
-					</script>
-				</section>
 
 				<section id="scene17" class="motionContent">
 					<div id="trigger17" class="spacer s0"></div>
@@ -1622,6 +1590,18 @@
 		</div>
 		<div class="dim"></div>
 	</div>
+
+	<div class="popup" id="popup04">
+		<div class="inner">
+			<a href="#none" class="close"><img src="../assets/img/popup_close2.png" alt=""></a>
+			<div class="content">
+				<div class="youtube">
+					<iframe width="951" height="816" src="https://www.youtube.com/embed/OJATbRuVR-g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="dim"></div>
+	</div>
 	
 	<script>
 		$(".popupBtn").on("click", function(){
@@ -1631,12 +1611,15 @@
 		})
 
 		$(".popup .dim").on("click", function(){
-			console.log("sdf")
 			$(".popup").removeClass("open");
 			$("html").removeClass("lock");
 		})
 		$(".popup .close").on("click", function(){
-			console.log("ss")
+			var $iframe = $(".popup").find("iframe");
+			if($iframe.length){
+				var src = $iframe.attr("src");
+				$iframe.attr("src", "").attr("src", src);
+			}
 			$(".popup").removeClass("open");
 			$("html").removeClass("lock");
 		})
