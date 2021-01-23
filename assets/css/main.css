@@ -90,6 +90,7 @@ i.circ-arrow-down {display:inline-block;width:15px;height:16px;background:url(".
 .bullet {font-size:12px;}
 .bullet > li[data-bullet="*"] {padding-left:6px;text-indent:-6px;color:#999;}
 .bullet > li:before {content:attr(data-bullet);}
+.bullet > li em {display:inline-block;padding-left:6px;padding-bottom:3px;font-weight:700;font-style:normal;}
 
 .talk {position:relative;overflow:hidden;}
 .talk:before {content:"";position:absolute;top:0;left:16px;right:15px;height:45px;background-position:0 0;background-repeat:repeat-x;background-size:auto 100%;}
@@ -119,9 +120,9 @@ i.circ-arrow-down {display:inline-block;width:15px;height:16px;background:url(".
 .swiper-pagination-bullet:nth-child(3) {background-color:#ababab;}
 
 /* twentytwenty */
-.twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-handle {margin-top:-15px;margin-left:-15px;top:74.5%;width:31px;height:31px;border:0;background-color:#fff;}
+.twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-handle {margin-top:15px;margin-left:-15px;top:74.5%;width:31px;height:31px;border:0;background-color:#e1e2e4;box-shadow:none;}
 .twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-handle:before,
-.twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-handle:after {margin-top:0;margin-bottom:0;width:1px;margin-left:0;background-color:#fff;}
+.twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-handle:after {margin-top:0;margin-bottom:0;width:1px;margin-left:0;background-color:#e1e2e4;}
 .twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-left-arrow,
 .twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-right-arrow {margin-top:-4px;border:5px inset transparent;}
 .twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-left-arrow {margin-left:-14px;border-right:5px solid #000;}
@@ -161,13 +162,23 @@ video {
 #animate13 .image img {display:block;width:100%;}
 
 #animate5 {}
-#animate5 .blank {padding-top:332px;padding-bottom:calc(100% + 106px);}
+#animate5 .blank {padding-top:332px;padding-bottom:75%;}
 #animate5 .video {position:absolute;left:0;width:100%;padding-bottom:75%;}
 #animate5 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 #animate5 .logo {position:absolute;left:25px;}
 #animate5 .logo img {display:block;width:80px;}
-#animate5 .desc {position:absolute;top:332px;margin-top:75%;padding-top:16px;left:25px;right:25px;}
+#animate5 .desc {margin-top:16px;padding:0 25px;}
 #animate5 .desc li + li {margin-top:4px;}
+
+#animate6 {}
+#animate6 img {width:100%;}
+#animate6 .blank {padding-top:280px;padding-bottom:89%;}
+#animate6 .divider {position:absolute;left:0;width:100%;}
+#animate6 .divider .image {position:absolute;top:0;left:0;width:100%;overflow:hidden;}
+#animate6 .divider .image > img {display:block;width:100vw;}
+#animate6 .divider .drag {position:absolute;top:0;right:0;height:100%;}
+#animate6 .divider .drag img {height:100%;transform:translateX(-50%);}
+#animate6 .desc {margin-top:20px;padding:0 25px;}
 
 /* #animate3 {height:550px;background:#fff;} */
 /* #animate3 {height:722px;background:#fff;}
@@ -192,17 +203,6 @@ video {
 #animate4 .blank {padding-top:230px;padding-bottom:100%;}
 #animate4 .video {position:absolute;left:0;width:100%;padding-bottom:100%;}
 #animate4 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
-
-#animate6 {}
-#animate6 img {width:100%;}
-#animate6 .blank {padding-top:214px;padding-bottom:114%;}
-#animate6 .divider {position:absolute;left:0;width:100%;/*padding-bottom:83.4%;*/}
-#animate6 .divider .image {position:absolute;top:0;left:0;width:100%;overflow:hidden;}
-#animate6 .divider .image > img {display:block;width:100vw;}
-#animate6 .divider .drag {position:absolute;top:0;right:0;height:100%;}
-#animate6 .divider .drag img {height:100%;transform:translateX(-50%);}
-#animate6 .desc {padding:0 20px;}
-#animate6 .desc .small {margin-top:18px;font-size:12px;color:#999;}
 
 #animate7 {}
 #animate7 .blank {padding-top:236px;padding-bottom:100%;}
@@ -353,7 +353,6 @@ video {
 .popup#popup02 .content p {margin-top:15px;color:#222;}
 .popup#popup02 .content .bullet {margin-top:13px;}
 .popup#popup02 .content .bullet li + li {margin-top:10px;}
-.popup#popup02 .content .bullet em {display:inline-block;padding-left:6px;padding-bottom:3px;font-style:normal;}
 
 .move-top {
     opacity: 0;

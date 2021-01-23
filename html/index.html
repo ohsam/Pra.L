@@ -297,6 +297,90 @@
 					</script>
 				</section>
 
+				<section id="scene6" class="motionContent">
+					<div id="trigger6" class="spacer s0"></div>
+					<div id="animate6">
+						<div class="blank"></div>
+						<div id="animate6_eye" class="eyebrow">
+							<p class="talk light"><span>다른 제품이랑 뭐가 달라요?</span></p>
+						</div>
+						<div id="animate6_1" class="title">
+							<h2>더 촘촘하고 더 넓게<br>모든 영역을 커버</h2>
+							<p class="small">LG프라엘만의 핵심 기술 웨이브 가이드를 사용하여 많은 양의 레이저 빛을 더 넓게 치료할 수 있습니다</p>
+						</div>
+						<div id="animate6_2" class="divider">
+							<div class="container" data-offset-pct="0.5">
+								<img src="../assets/img/scene_6_01.png" alt="">
+								<img src="../assets/img/scene_6_02.png" alt="">
+							</div>
+						</div>
+						<div id="animate6_3" class="desc">
+							<ul class="bullet">
+								<li data-bullet="*">
+									<em>웨이브가이드(Waveguide)</em> <br>
+									일반적인 LD(레이저) 대비 광원 간 간격을 좁게 하여 치료 효율을 최적화한 정밀한 광학 제어 기술로 거울식 반사 장치를 적용하여 더 넓은 면적에 레이저 빛을 분사할 수 있습니다 
+								</li>
+							</ul>
+						</div>
+					</div>
+					<script>
+						// tween_eye
+						TweenMax.set("#animate6_eye", {opacity:0, top: "140"});
+                        var tween_eye = new TimelineMax()
+                            .to("#animate6_eye", 3, {top: 60, opacity: 1})
+							.to("#animate6_eye", 3, {/*opacity: 0.6,*/ delay: 4})
+
+						// tween_title
+						TweenMax.set("#animate6_1", {opacity:0, top: "185"});
+                        var tween_title = new TimelineMax()
+                            .to("#animate6_1", 3, {top: 105, opacity: 1})
+							.to("#animate6_1", 3, {/*opacity: 0.6,*/ delay: 4})
+
+						//tween_image
+						TweenMax.set("#animate6_2", {opacity: 0, top:"330"});
+						var tween_image1 = new TimelineMax()
+							.to("#animate6_2", 3, {opacity:1, top:280})
+							.to("#animate6_2", 1, {/*opacity: 0.6,*/ delay: 6})
+						
+						TweenMax.set("#animate6_3", {opacity: 0});
+						var tween_image2 = new TimelineMax()
+							.to("#animate6_3", 2, {opacity: 1, delay: 6.5})
+							.to("#animate6_3", 1.5, {})
+						
+						// build scene
+						var sceneOption = {
+							triggerElement: "#trigger6",
+							triggerHook: 0.6,
+							duration: "70%",
+							reverse: true
+						}
+						var sceneOption2 = {
+							triggerElement: "#trigger6",
+							triggerHook: 0.5,
+							duration: "65%",
+							reverse: true
+						}
+						var sceneOption_eye = {
+							triggerElement: "#trigger6",
+							triggerHook: 0.64,
+							duration: "82%",
+							reverse: true
+						}
+						var scene =  new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_title)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption2)
+										.setTween(tween_image1)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption2)
+										.setTween(tween_image2)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption_eye)
+										.setTween(tween_eye)
+										.addTo(controller);
+					</script>
+				</section>
+
 				<section id="scene5" class="motionContent">
 					<div id="trigger5" class="spacer s0"></div>
 					<div id="animate5_scroll_from" style="position:absolute;top:-480px;left:0"></div>
@@ -386,85 +470,6 @@
 												$("#animate5_2_video").get(0).pause();
 											}
 										});
-						new ScrollMagic.Scene(sceneOption_eye)
-										.setTween(tween_eye)
-										.addTo(controller);
-					</script>
-				</section>
-
-				<section id="scene6" class="motionContent">
-					<div id="trigger6" class="spacer s0"></div>
-					<div id="animate6">
-						<div class="blank"></div>
-						<div id="animate6_eye" class="eyebrow">15보다 작은 16</div>
-						<div id="animate6_1" class="title">
-							<h2>사이즈는 줄이고<br />화면은 크게</h2>
-						</div>
-						<div id="animate6_2" class="divider">
-							<div class="container" data-offset-pct="0.4">
-								<img src="../assets/img/scene_6_01.png" alt="">
-								<img src="../assets/img/scene_6_02.png" alt="">
-							</div>
-						</div>
-						<div id="animate6_3" class="desc">
-							<div class="small">
-								<p>* 그램 16 : 화면 대각선 40.6cm</p>
-								<p>* 울트라 PC(15U50N) : 화면 대각선 39.6cm</p>
-							</div>
-						</div>
-					</div>
-					<script>
-						// tween_eye
-						TweenMax.set("#animate6_eye", {opacity:0, top: "150"});
-                        var tween_eye = new TimelineMax()
-                            .to("#animate6_eye", 3, {top: 70, opacity: 1})
-							.to("#animate6_eye", 3, {/*opacity: 0.6,*/ delay: 4})
-
-						// tween_title
-						TweenMax.set("#animate6_1", {opacity:0, top: "185"});
-                        var tween_title = new TimelineMax()
-                            .to("#animate6_1", 3, {top: 105, opacity: 1})
-							.to("#animate6_1", 3, {/*opacity: 0.6,*/ delay: 4})
-
-						//tween_image
-						TweenMax.set("#animate6_2", {opacity: 0, top:"275"});
-						var tween_image1 = new TimelineMax()
-							.to("#animate6_2", 3, {opacity:1, top:225})
-							.to("#animate6_2", 1, {/*opacity: 0.6,*/ delay: 6})
-						
-						TweenMax.set("#animate6_3", {opacity: 0});
-						var tween_image2 = new TimelineMax()
-							.to("#animate6_3", 2, {opacity: 1, delay: 6.5})
-							.to("#animate6_3", 1.5, {})
-						
-						// build scene
-						var sceneOption = {
-							triggerElement: "#trigger6",
-							triggerHook: 0.6,
-							duration: "70%",
-							reverse: true
-						}
-						var sceneOption2 = {
-							triggerElement: "#trigger6",
-							triggerHook: 0.5,
-							duration: "65%",
-							reverse: true
-						}
-						var sceneOption_eye = {
-							triggerElement: "#trigger6",
-							triggerHook: 0.64,
-							duration: "82%",
-							reverse: true
-						}
-						var scene =  new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_title)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption2)
-										.setTween(tween_image1)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption2)
-										.setTween(tween_image2)
-										.addTo(controller);
 						new ScrollMagic.Scene(sceneOption_eye)
 										.setTween(tween_eye)
 										.addTo(controller);
