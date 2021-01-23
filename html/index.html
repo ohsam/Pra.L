@@ -565,38 +565,49 @@
 					<div id="trigger9" class="spacer s0"></div>
 					<div id="animate9">
 						<div class="blank"></div>
-						<div id="animate9_1" class="title">
+						<!-- <div id="animate9_1" class="title">
 							<h2>열어도 닫아도<br />그램 다운 디자인</h2>
-						</div>
+						</div> -->
 						<div id="animate9_2" class="slide">
 							<!-- Swiper -->
 							<div class="swiper-container">
 								<ul class="image swiper-wrapper">
-									<li class="swiper-slide">
+									<li class="swiper-slide currentActive">
 										<div class="txt">
-											<strong>스노우 화이트</strong>
-											<p>눈부신 순백의 아름다움<br />하얀 눈을 그대로 담아낸 스노우 화이트</p>
+											<strong>토탈케어 모드<span>/ 27분</span></strong>
+											<p>전체적인 케어를 원하거나 전반적인<br>모발 밀도가 떨어지는 경우</p>
 										</div>
-										<img src="../assets/img/scene_9_01.png" alt="">
-									</li>
-									<li class="swiper-slide">
-										<div class="txt white">
-											<strong>옵시디안 블랙</strong>
-											<p>순수하게 빛나는 짙은 검정의<br />흑요석을 연상시키는 옵시디안 블랙</p>
+										<div class="video" style="background-color:#fff;">
+											<video src="../assets/mov/scene9_2_01.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
 										</div>
-										<img src="../assets/img/scene_9_02.png" alt="">
 									</li>
 									<li class="swiper-slide">
 										<div class="txt">
-											<strong>쿼츠 실버</strong>
-											<p>수정의 영롱함 <br />그 본질을 그대로 담아낸 쿼츠 실버</p>
+											<strong>프론트케어 모드<span>/ 18분</span></strong>
+											<p>앞머리 윗머리 집중 케어 앞머리 선이<br>밀리는 경우 </p>
 										</div>
-										<img src="../assets/img/scene_9_03.png" alt="">
+										<div class="video" style="background-color:#fff;">
+											<video src="../assets/mov/scene9_2_02.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="txt">
+											<strong>탑케어 모드<span>/ 18분</span></strong>
+											<p>넓게 분포된 센서를 통해 두피 유형을<br>판단하여 치료 모드를 추천합니다</p>
+										</div>
+										<div class="video" style="background-color:#fff;">
+											<video src="../assets/mov/scene9_2_03.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
+										</div>
 									</li>
 								</ul>
 								<!-- Add Pagination -->
 								<div class="swiper-page-wrap"><div class="swiper-pagination"></div></div>
 							</div>
+						</div>
+						<div id="animate9_3" class="desc">
+							<ul class="bullet">
+								<li data-bullet="*">탈모가 주로 발생하는 T존 영역(앞머리, 윗머리, 정수리 부분)<br>레이저 광원을 집중 적용한 탈모 치료 의료기기입니다</li>
+							</ul>
 						</div>
 					</div>
 					<script>
@@ -614,16 +625,27 @@
 							},
 						});
 
+						swiper.on('slideChange', function (e) {
+							$("#animate9_2 .swiper-slide")
+								.removeClass("currentActive")
+								.eq(e.activeIndex)
+								.addClass("currentActive");
+
+							var video = $("#animate9_2 .currentActive video").get(0);
+							video.currentTime = 0;
+							video.play();
+						});
+
 						// tween_title
-						TweenMax.set("#animate9_1", {opacity:0, top: "140"});
-                        var tween_title = new TimelineMax()
-                            .to("#animate9_1", 3, {top: 60, opacity: 1})
-							.to("#animate9_1", 3, {/*opacity: 0.6,*/ delay: 4})
+						// TweenMax.set("#animate9_1", {opacity:0, top: "140"});
+                        // var tween_title = new TimelineMax()
+                        //     .to("#animate9_1", 3, {top: 60, opacity: 1})
+						// 	.to("#animate9_1", 3, {/*opacity: 0.6,*/ delay: 4})
 
 						//tween_image
-						TweenMax.set("#animate9_2", {opacity: 0, top:"230"});
+						TweenMax.set("#animate9_2", {opacity: 0, top:"50"});
 						var tween_image1 = new TimelineMax()
-							.to("#animate9_2", 3, {opacity:1, top:180})
+							.to("#animate9_2", 3, {opacity:1, top:0})
 							.to("#animate9_2", 1, {/*opacity: 0.6,*/ delay: 6})
 						
 						// build scene
@@ -639,12 +661,21 @@
 							duration: "65%",
 							reverse: true
 						}
-						var scene =  new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_title)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption2)
+						// var scene =  new ScrollMagic.Scene(sceneOption)
+						// 				.setTween(tween_title)
+						// 				.addTo(controller);
+						var scene =  new ScrollMagic.Scene(sceneOption2)
 										.setTween(tween_image1)
-										.addTo(controller);
+										.addTo(controller)
+										.on("enter leave", function (e) {
+											var video = $("#animate9_2 .currentActive video").get(0);
+											if(e.type == "enter"){
+												video.currentTime = 0;
+												video.play();
+											}else{
+												video.pause();
+											}
+										});;
 					</script>
 				</section>
 
