@@ -476,7 +476,123 @@
 					</script>
 				</section>
 
-				TODO: 임상시험으로 입증된  치료 효과
+				<section id="scene14" class="motionContent">
+					<div id="trigger14" class="spacer s0"></div>
+					<div id="animate14">
+						<div class="blank"></div>
+						<div id="animate14_eye" class="eyebrow">
+							<p class="talk med"><span>충분히 검증이 되었나요?</span></p>
+						</div>
+						<div id="animate14_1" class="title">
+							<h2>임상시험으로 입증된 치료 효과</h2>
+						</div>
+						<div id="animate14_2" class="image" style="background-color:#000;">
+							<img src="../assets/img/scene_14_01.png" alt="" />
+						</div>
+						<div id="animate14_3" class="title">
+							<ul class="effect">
+								<li>
+									<span class="name">모발 밀도</span>
+									<span class="num">21.64<em>%</em></span>
+								</li>
+								<li>
+									<span class="name">모발 굵기</span>
+									<span class="num">19.46<em>%</em></span>
+								</li>
+							</ul>
+							<ul class="bullet">
+								<li data-bullet="*">개인차가 있을 수 있습니다</li>
+							</ul>
+							<a href="#none" class="button popupBtn" data-popup-id="popup03">임상시험 결과 더보기 </a>
+						</div>
+					</div>
+					<script>
+						// tween_eye
+						TweenMax.set("#animate14_eye", {opacity:0, top: "140"});
+                        var tween_eye = new TimelineMax()
+                            .to("#animate14_eye", 3, {top: 60, opacity: 1})
+							.to("#animate14_eye", 3, {/*opacity: 0.6,*/ delay: 4})
+
+						// tween_title
+						TweenMax.set("#animate14_1", {opacity:0, top: "185"});
+						var tween_title = new TimelineMax()
+							.to("#animate14_1", 3, {top: 105, opacity: 1})
+							.to("#animate14_1", 3, {delay: 4})
+
+						//tween_image
+						TweenMax.set("#animate14_2", {opacity: 0, top:"346"});
+						var tween_image1 = new TimelineMax()
+							.to("#animate14_2", 3, {opacity:1, top:296})
+							.to("#animate14_2", 1, {delay: 6})
+
+						TweenMax.set("#animate14_3", {opacity: 0, top:"280"});
+						var tween_image2 = new TimelineMax()
+							.to("#animate14_3", 2.5, {opacity:1, top:200, delay:0.5})
+							.to("#animate14_3", 1, {delay: 6})
+
+						// build scene
+						var sceneOption = {
+							triggerElement: "#trigger14",
+							triggerHook: 0.6,
+							duration: "70%",
+							reverse: true
+						}
+						var sceneOption2 = {
+							triggerElement: "#trigger14",
+							triggerHook: 0.5,
+							duration: "65%",
+							reverse: true
+						}
+						var sceneOption_eye = {
+							triggerElement: "#trigger14",
+							triggerHook: 0.64,
+							duration: "82%",
+							reverse: true
+						}
+						var scene = new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_title)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption2)
+										.setTween(tween_image1)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_image2)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption_eye)
+										.setTween(tween_eye)
+										.addTo(controller);
+					</script>
+				</section>
+					
+				<section id="scene15A" class="motionContent">
+					<div id="trigger15A" class="spacer s0"></div>
+					<div id="animate15A">
+						<div class="blank"></div>
+						<div id="animate15_1" class="quote">
+							<p class="message">가정용 LLLT 장치 <strong>LG 프라엘 메디헤어</strong>가 남성과 여성의 안드로겐 <strong>탈모환자에게 효과적으로 안전한</strong> 치료방법으로 본다</p>
+							<span class="source">탈모 치료 의료기기에 관한 논문 인용</span>
+							<span class="talker">Jee-Woo Kim 외 6명/ 2020년 8월</span>
+						</div>
+					</div>
+					<script>
+						// tween_image
+						TweenMax.set("#animate15_1", {top: "80px", opacity: 0});
+						var tween_image1 = new TimelineMax()
+							.to("#animate15_1", 1, {top:0, opacity: 1, ease: Cubic.easeOut})
+
+						// build scene
+						var sceneOption = {
+							triggerElement: "#trigger15A",
+							triggerHook: 0.8,
+							reverse: true
+						}
+						var scene = new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_image1)
+										//.addIndicators({name: "15 (duration: 0)"}) // add indicators (requires plugin)
+										.addTo(controller);
+
+					</script>
+				</section>
 
 				<section id="scene3" class="motionContent">
 					<div id="trigger3" class="spacer s0"></div>
@@ -883,7 +999,7 @@
 					</script>
 				</section>
 
-				TOBE: 활용TIP
+				TODO: 활용TIP
 
 				<section id="scene11" class="motionContent">
 					<div id="trigger11" class="spacer s0"></div>
@@ -1206,97 +1322,6 @@
 					</script>
 				</section>
 
-				<section id="scene14" class="motionContent">
-					<div id="trigger14" class="spacer s0"></div>
-					<div id="animate14">
-						<div class="blank"></div>
-						<div id="animate14_1" class="title white">
-							<h2>우리가 가는 길이<br />새로움의 표준</h2>
-							<p class="small">인텔® Evo™ 플랫폼 인증</p>
-						</div>
-						<div id="animate14_2" class="video" style="background-color:#000;">
-							<img src="../assets/img/CPU.gif" alt="" />
-						</div>
-						<div id="animate14_3" class="desc grey">
-							<p class="small indent">CPU i5 이상, Windows 10 OS 포함 제품에 한함</p>
-						</div>
-					</div>
-					<script>
-						// tween_title
-						TweenMax.set("#animate14_1", {opacity:0, top: "140"});
-						var tween_title = new TimelineMax()
-							.to("#animate14_1", 3, {top: 60, opacity: 1})
-							.to("#animate14_1", 3, {delay: 4})
-
-						//tween_image
-						TweenMax.set("#animate14_2", {opacity: 0, top:"270"});
-						var tween_image1 = new TimelineMax()
-							.to("#animate14_2", 3, {opacity:1, top:220})
-							.to("#animate14_2", 1, {delay: 6})
-
-						TweenMax.set("#animate14_3", {opacity: 0, top:"280"});
-						var tween_image2 = new TimelineMax()
-							.to("#animate14_3", 2.5, {opacity:1, top:200, delay:0.5})
-							.to("#animate14_3", 1, {delay: 6})
-
-						// build scene
-						var sceneOption = {
-							triggerElement: "#trigger14",
-							triggerHook: 0.6,
-							duration: "70%",
-							reverse: true
-						}
-						var sceneOption2 = {
-							triggerElement: "#trigger14",
-							triggerHook: 0.5,
-							duration: "65%",
-							reverse: true
-						}
-						var scene = new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_title)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption2)
-										.setTween(tween_image1)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_image2)
-										.addTo(controller);
-					</script>
-				</section>
-					
-				<section id="scene15A" class="motionContent">
-					<div id="trigger15A" class="spacer s0"></div>
-					<div id="animate15A">
-						<div class="blank"></div>
-						<div id="animate15_1" class="icons">
-							<img src="../assets/img/scene_15_01.png" alt="">
-							<div class="desc grey">
-								<p class="small indent">즉시 깨우기: 1초 이내에 시스템 대기 모드에서 활성화</p>
-								<p class="small indent">긴 배터리 시간: 배터리 라이프(PABL), 동영상 재생 시 16시간/웹브라우징 시 9시간 사용</p>
-								<p class="small indent">빠른 충전: 30분 충전으로 4시간 사용</p>
-								<p class="small indent">제조사에서 제공한 측정값이며 사용 환경에 따라 달라질 수 있습니다</p>
-							</div>
-						</div>
-					</div>
-					<script>
-						// tween_image
-						TweenMax.set("#animate15_1", {top: "80px", opacity: 0});
-						var tween_image1 = new TimelineMax()
-							.to("#animate15_1", 1, {top:0, opacity: 1, ease: Cubic.easeOut})
-
-						// build scene
-						var sceneOption = {
-							triggerElement: "#trigger15A",
-							triggerHook: 0.8,
-							reverse: true
-						}
-						var scene = new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_image1)
-										//.addIndicators({name: "15 (duration: 0)"}) // add indicators (requires plugin)
-										.addTo(controller);
-
-					</script>
-				</section>
 				<section id="scene15B" class="motionContent">
 					<div id="trigger15B" class="spacer s0"></div>
 					<div id="animate15B">
