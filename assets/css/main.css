@@ -198,9 +198,20 @@ video {
 
 #animate4 {}
 #animate4_1 {z-index:1;}
-#animate4 .blank {padding-top:230px;padding-bottom:100%;}
-#animate4 .video {position:absolute;left:0;width:100%;padding-bottom:100%;}
+#animate4 .blank {padding-top:226px;padding-bottom:91.8%;}
+#animate4 .video {position:absolute;left:0;width:100%;padding-bottom:91.8%;}
 #animate4 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
+
+#animate10 {}
+#animate10 .blank {padding-top:226px;padding-bottom:83.5%;}
+#animate10 .video {position:absolute;left:0;width:100%;padding-bottom:83.5%;}
+#animate10 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
+
+#animate18 {}
+#animate18 .blank {padding-top:212px;padding-bottom:94.5%;}
+#animate18 .image {position:absolute;left:0;}
+#animate18 .image img {display:block;width:100%;}
+#animate18 .desc {margin-top:16px;padding:0 25px;}
 
 #animate7 {}
 #animate7 .blank {padding-top:236px;padding-bottom:100%;}
@@ -219,10 +230,6 @@ video {
 #animate8_3 .sub {font-size:15px;color:#333;}
 #animate8_3 .small {margin-top:18px;font-size:12px;color:#999;}
 
-#animate10 {}
-#animate10 .blank {padding-top:214px;padding-bottom:calc(100% + 15px);}
-#animate10 .video {position:absolute;left:0;width:100%;padding-bottom:100%;}
-#animate10 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 
 #animate11 {}
 /* #animate11 .blank {padding-top:212px;padding-bottom:calc(116.6% + 59.6%);}
@@ -314,12 +321,6 @@ video {
 #animate17 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 #animate17 .title {color:#fff;}
 #animate17 .desc {position:absolute;left:25px;bottom:36px;width:calc(100% - 50px);}
-
-#animate18 {}
-#animate18 .blank {padding-top:212px;padding-bottom:calc(86.2% + 70px);}
-#animate18 .image {position:absolute;left:25px;width:calc(100% - 50px);border-radius:15px;overflow:hidden;}
-#animate18 .image img {display:block;width:100%;}
-#animate18 .desc {position:absolute;left:25px;bottom:36px;width:calc(100% - 50px);}
 
 .popup.open {display:block;}
 .popup {display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:100;}
