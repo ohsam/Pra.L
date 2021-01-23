@@ -49,28 +49,26 @@ html.lock {overflow:hidden;}
     background-color:rgba(0,0,0,0.7);
     z-index: 99;
 }
+
 #titlechart .tab {display:inline-block;width:100%;height:100%;}
-#titlechart .tab:after {content:'';position:absolute;left:0;bottom:0px;display:block;width:100%;height:1px;background:#666;}
-#titlechart .tab .top {display:inline-block;width:100%;height:40px;padding:11px 20px 4px;border-bottom:1px solid #666;}
-#titlechart .tab .top .logo {display:inline-block;height:20px;margin-top:1px;color:#fff;vertical-align:top;}
-#titlechart .tab .top .logo >img {width:auto;height:100%;}
-#titlechart .tab .top .model {display:inline-block;margin-left:10px;font-size:12px;color:#fff;}
+#titlechart .tab:after {content:'';position:absolute;left:0;bottom:0px;display:block;width:100%;height:1px;background:#707070;}
+#titlechart .tab .top {display:inline-block;width:100%;height:40px;padding:11px 20px 5px;border-bottom:1px solid #5e5e5e;}
+#titlechart .tab .top .logo {display:inline-block;margin-top:1px;color:#fff;vertical-align:top;}
+#titlechart .tab .top .logo >img {width:61px;}
+#titlechart .tab .top .model {display:inline-block;margin-left:5px;font-size:12px;color:#fff;}
 #titlechart .tab > ul {position:relative;display:inline-block;width:100%;z-index:1;}
-#titlechart .tab > ul > li {float:left;}
-/* #titlechart .tab > ul > li + li {margin-left:10px;} */
-#titlechart .tab > ul > li > a {display:block;padding:7px 20px 6px;font-size:11px;color:#fff;border-bottom:2px solid transparent;text-decoration:none;}
-#titlechart .tab > ul > li > a {padding-left:27px;padding-right:27px;}
-#titlechart .tab > ul > li:first-child > a,
-#titlechart .tab > ul > li:last-child > a {padding-left:20px;padding-right:20px;}
+#titlechart .tab > ul > li {float:left;width:20%;}
+#titlechart .tab > ul > li > a {display:block;padding:6px 0 7px;font-size:11px;color:#fff;text-align:center;border-bottom:2px solid transparent;text-decoration:none;}
 #titlechart .tab > ul > li.on > a {border-bottom:2px solid #990033;}
 
 
 .title {
     position:absolute;
-    left: 25px;
+    left:25px;
+    right:25px;
 }
 .title h2 {margin:0;padding:0;font-size:32px;font-weight:700;}
-.title .small {margin-top:15px;font-size:16px;line-height:24px;}
+.title .small {margin-top:9px;font-size:15px;line-height:23px;}
 .title .button {margin-top:15px;display:inline-block;padding:0 14px;font-size:14px;line-height:30px;height:30px;border:1px solid #666;border-radius:16px;box-sizing:content-box;}
 .small.indent {text-indent:-9px;padding-left:9px;word-break:keep-all;}
 .small.indent:before {content:'* ';}
@@ -87,7 +85,23 @@ html.lock {overflow:hidden;}
 .grey, .gray {color:#888;}
 .imageFitW > img {width:100%;height:auto;}
 
-i.circ-arrow-down {display:inline-block;width:13px;height:13px;background:url("../img/ico_circArrow_down.png") center center no-repeat;background-size:contain;}
+i.circ-arrow-down {display:inline-block;width:15px;height:16px;background:url("../img/ico_circArrow_down.png") center center no-repeat;background-size:contain;}
+
+.talk {position:relative;overflow:hidden;}
+.talk:before {content:"";position:absolute;top:0;left:16px;right:15px;height:45px;background-position:0 0;background-repeat:repeat-x;background-size:auto 100%;}
+.talk span {position:relative;font-size:16px;line-height:35px;}
+.talk span:before {content:"";display:block;float:left;width:16px;height:45px;background-position:0 0;background-repeat:no-repeat;background-size:auto 100%;}
+.talk span:after {content:"";display:block;float:right;width:15px;height:45px;background-position:0 0;background-repeat:no-repeat;background-size:auto 100%;}
+
+.talk.dark:before {background-image:url("../img/talk_dark02.png");}
+.talk.dark span {color:#999;}
+.talk.dark span:before {background-image:url("../img/talk_dark01.png");}
+.talk.dark span:after {background-image:url("../img/talk_dark03.png");}
+
+.talk.light:before {background-image:url("../img/talk_light02.png");}
+.talk.light span {color:#606060;}
+.talk.light span:before {background-image:url("../img/talk_light01.png");}
+.talk.light span:after {background-image:url("../img/talk_light03.png");}
 
 /* Swiper */
 .swiper-wrapper {position:relative;width:100%;height:100%;z-index:1;display:flex;transition-property: transform;box-sizing: content-box;}
@@ -116,27 +130,27 @@ video {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
 }
-#animate1 {height:530px;background:#31302e;}
+#animate1 {background:#31302e;}
 #animate1_1 {z-index:2;}
-#animate1_2 {position:absolute;width:100%;top:195px;z-index:1;}
-#animate1_2 > li {position:absolute;left:25px;}
+#animate1_2 {position:absolute;width:100%;top:172px;z-index:1;}
+#animate1_2 > li {position:absolute;right:25px;}
 #animate1_2 > li a {display:block;}
-#animate1_2 > li .sub {font-size:25px;font-weight:900;color:#fff;}
+#animate1_2 > li .sub {font-size:26px;font-weight:900;color:#fff;}
 #animate1_2 > li .sub em {margin-left:4px;font-size:17px;font-weight:700;font-style:normal;}
-#animate1_2 > li .desc {color:#b0b3b8;}
-#animate1_2 > li .desc i {margin-left:5px;vertical-align: middle;}
-#animate1_3 {position:relative;height:530px;overflow: hidden;z-index:0;}
-#animate1_3 img {position:absolute;bottom:0;right:0;width:360px;height:530px;}
+#animate1_2 > li .sub i {margin-top:1px;margin-left:5px;vertical-align: middle;}
+#animate1_2 > li .desc {font-size:16px;color:#b0b0b0;}
+#animate1_3 {position:relative;overflow: hidden;z-index:0;}
+#animate1_3 img {display:block;max-width:100%;}
 
-#scene3 {/*overflow:visible;*/}
-#animate2 {height:820px;overflow:hidden;background:#fff;}
-#animate2_1 {}
-#animate2_2 {position:absolute;left:50%;/*top:-45px;*/}
+#animate2 {height:820px;overflow:hidden;color:#fff;background:#181715;}
+#animate2 .eyebrow {z-index:1;}
+#animate2_1 {z-index:1;}
+#animate2_1 .small {color:#999;}
+#animate2_2 {position:absolute;/*left:50%;top:-45px;*/}
 #animate2_2 > img {position:absolute;left:-700px;top:0;}
 #animate2_2_info {position:absolute;}
-#animate2_3 {position:absolute;left:25px;/*top:590px;*/width:calc(100% - 50px);}
-#animate2_3 .sub {font-size:15px;color:#333;}
-#animate2_3 .small {margin-top:18px;font-size:12px;color:#999;}
+#animate2_3 {position:absolute;left:25px;right:25px;/*top:600px;*/}
+#animate2_3 .small {font-size:12px;color:#999;}
 
 /* #animate3 {height:550px;background:#fff;} */
 /* #animate3 {height:722px;background:#fff;}

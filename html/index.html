@@ -34,15 +34,15 @@
 				<section id="titlechart">
 					<div class="tab">
 						<div class="top">
-							<div class="logo"><b style="margin-right:-2px;">LG</b> 그램 16 <!-- <img src="../assets/img/logo_gram.png" alt="LG gram 16" /> --></div>
-							<div class="model">16Z90P-GA50K</div>
+							<div class="logo"><img src="../assets/img/logo_praL.png" alt="LG Pra.L" /></div>
+							<div class="model">메디헤어 HGN2V</div>
 						</div>
 						<ul>
-							<li><a href="#" data-target-scroll-top="530">휴대성</a></li>
-							<li><a href="#" data-target-scroll-top="3200">대화면</a></li>
-							<li><a href="#" data-target-scroll-top="4753">화질</a></li>
-							<li><a href="#" data-target-scroll-top="5883">디자인</a></li>
-							<li><a href="#" data-target-scroll-top="7600">성능</a></li>
+							<li><a href="#" data-target-scroll-top="530">기술력</a></li>
+							<li><a href="#" data-target-scroll-top="3200">안전성</a></li>
+							<li><a href="#" data-target-scroll-top="4753">사용편의</a></li>
+							<li><a href="#" data-target-scroll-top="5883">활용팁</a></li>
+							<li><a href="#" data-target-scroll-top="7600">구성품</a></li>
 						</ul>
 					</div>
 					<script>
@@ -63,25 +63,25 @@
                     <div id="trigger1" class="spacer s0"></div>
                     <div id="animate1">
 						<div id="animate1_1" class="title white">
-							<h2>더 넓게 그리고<br/>더 가볍게</h2>
+							<h2>집에서 하는<br/>셀프 탈모 클리닉</h2>
 						</div>
 						<ul id="animate1_2">
 							<li style="top:60px">
 								<a href="#" data-scroll-from="#animate2_scroll_from", data-scroll-to="#animate2_scroll_to" data-target-scroll-top="3200">
-									<div class="sub">11<em>%</em></div>
-									<div class="desc">더 커진 화면<i class="circ-arrow-down"></i></div>
+									<div class="desc">레이저/LED 광원</div>
+									<div class="sub">250<em>개</em><i class="circ-arrow-down"></i></div>
 								</a>
 							</li>
 							<li style="top:134px">
 								<a href="#" data-scroll-from="#animate5_scroll_from", data-scroll-to="#animate5_scroll_to" data-target-scroll-top="530">
-									<div class="sub">1,190<em>g</em></div>
-									<div class="desc">세계 최경량 무게<i class="circ-arrow-down"></i></div>
+									<div class="desc">모발 밀도 증가</div>
+									<div class="sub">21.64<em>%</em><i class="circ-arrow-down"></i></div>
 								</a>
 							</li>
 							<li style="top:208px">
 								<a href="#" data-scroll-from="#animate7_scroll_from", data-scroll-to="#animate7_scroll_to" data-target-scroll-top="4753">
-									<div class="sub">200<em>%</em></div>
-									<div class="desc">더 선명하게<i class="circ-arrow-down"></i></div>
+									<div class="desc">모발 굵기 증가</div>
+									<div class="sub">19.46<em>%</em><i class="circ-arrow-down"></i></div>
 								</a>
 							</li>
 						</ul>
@@ -138,6 +138,96 @@
 							}, 500, "swing");
 						})
 
+					</script>
+				</section>
+
+				<section id="scene2" class="motionContent">
+                    <div id="trigger2" class="spacer s0"></div>
+					<div id="animate2_scroll_from" style="position:absolute;top:190px;left:0;"></div>
+					<div id="animate2_scroll_to" style="position:absolute;top:540px;left:0;"></div>
+					<div id="animate2">
+						<div id="animate2_eye" class="eyebrow">
+							<p class="talk dark"><span>어떻게 탈모치료가 될 수 있죠?</span></p>
+						</div>
+						<div id="animate2_1" class="title">
+							<h2>집중해서 촘촘하게<br>치료 시스템</h2>
+							<p class="small">250개의 레이저와 LED 복합 빛 에너지가 모낭 세포 대사를 활성화하고 영양공급을 활발하게 하여 탈모를 치료합니다</p>
+						</div>
+						<div id="animate2_2">
+							<video id="animate2_2_video" src="../assets/mov/scene2_720_800.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
+						</div>
+						<div id="animate2_3" class="desc">
+							<div class="small">
+								<p>* 250개 광원 : 레이저 : 146개, LED 104개</p>
+							</div>
+						</div>
+					</div>
+					<script>
+						// tween_eye
+						TweenMax.set("#animate2_eye", {opacity:0, top: "230"});
+                        var tween_eye = new TimelineMax()
+                            .to("#animate2_eye", 3, {top: 130, opacity: 1, ease: Cubic.easeInOut, delay: 2})
+							.to("#animate2_eye", 2.5, {/*opacity: 0.8, */top:30, delay: 3, ease: Cubic.easeIn})
+
+						// tween_title
+						TweenMax.set("#animate2_1", {opacity:0, top: "279"});
+                        var tween_title = new TimelineMax()
+                            .to("#animate2_1", 3, {top: 176, opacity: 1, ease: Cubic.easeInOut, delay: 2})
+							.to("#animate2_1", 2.5, {/*opacity: 0.8, */top:46, delay: 2.5, ease: Cubic.easeIn})
+							
+						// tween_image
+						TweenMax.set("#animate2_2", {scale: "2.5", top: "-100px"});
+						var tween_image1 = new TimelineMax()
+							.to("#animate2_2", 5, {scale: 1, top:70, ease: Cubic.easeInOut})
+							.to("#animate2_2", 2, {top: 20, /*opacity: 0.6,*/ delay: 3, ease: Cubic.easeIn})
+						
+						TweenMax.set("#animate2_3", {opacity:0, top: "630px"});
+						var tween_image3 = new TimelineMax()
+							.to("#animate2_3", 4, {opacity: 1, top:600, delay: 4.5})
+							.to("#animate2_3", 0.5, {opacity: 0.2, top:590, delay: 2.5})
+
+						var tween_image_wrap = new TimelineMax()
+							.to("#animate2", 5, {height:690, delay: 5})
+
+						// build scene
+						var sceneOption = {
+							triggerElement: "#trigger2",
+							triggerHook: 0.0,
+							duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+							reverse: true
+						}
+						var sceneOption_eye = {
+							triggerElement: "#trigger2",
+							triggerHook: 0.04,
+							duration: "92%",
+							reverse: true
+						}
+						var scene = new ScrollMagic.Scene(sceneOption)
+										.setPin("#animate2")
+										//.addIndicators({name: "scene2 (duration: 100%)"})
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_title)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_image1)
+										.addTo(controller)
+										.on("enter leave", function (e) {
+											if(e.type == "enter"){
+												$("#animate2_2_video").get(0).play();
+											}else{
+												$("#animate2_2_video").get(0).pause();
+											}
+										});
+						new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_image3)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_image_wrap)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption_eye)
+										.setTween(tween_eye)
+										.addTo(controller);
 					</script>
 				</section>
 
@@ -399,81 +489,6 @@
 										.addTo(controller);
 						new ScrollMagic.Scene(sceneOption2)
 										.setTween(tween_image1)
-										.addTo(controller);
-					</script>
-				</section>
-
-				<section id="scene2" class="motionContent">
-                    <div id="trigger2" class="spacer s0"></div>
-					<div id="animate2_scroll_from" style="position:absolute;top:190px;left:0;"></div>
-					<div id="animate2_scroll_to" style="position:absolute;top:540px;left:0;"></div>
-					<div id="animate2">
-						<div id="animate2_1" class="title">
-							<h2>11% 더 커진<br/>16 대화면</h2>
-						</div>
-						<div id="animate2_2">
-							<img src="../assets/img/scene_1_01_monitor.png" alt=""/>
-							<img id="animate2_2_info" src="../assets/img/scene_1_01_monitor_info.png" alt=""/>
-						</div>
-						<div id="animate2_3" class="desc">
-							<div class="sub">4면 슬림 베젤로 컴팩트한 사이즈에 <br/>대화면을 담아 더 큰 몰입감을 느낄 수 있습니다 </div>
-							<div class="small">
-								<p>* 16형 그램 16 기준 : 화면 대각선 40.6cm</p>
-								<p>* 15형 울트라 PC(15U50N 기준) : 화면 대각선 39.6cm</p>
-							</div>
-						</div>
-					</div>
-					<script>
-						// tween_title
-						TweenMax.set("#animate2_1", {opacity:0, top: "230"});
-                        var tween_title = new TimelineMax()
-                            .to("#animate2_1", 3, {top: 130, opacity: 1, ease: Cubic.easeInOut, delay: 2})
-							.to("#animate2_1", 2, {/*opacity: 0.8, */top:60, delay: 3, ease: Cubic.easeIn})
-							
-						// tween_image
-						TweenMax.set("#animate2_2", {scale: "1.3", top: "-60px"});
-						var tween_image1 = new TimelineMax()
-							.to("#animate2_2", 5, {scale: 0.27, top:320, ease: Cubic.easeInOut})
-							.to("#animate2_2", 2, {top: 290, /*opacity: 0.6,*/ delay: 3, ease: Cubic.easeIn})
-						
-						TweenMax.set("#animate2_2_info", {opacity:0});
-						var tween_image2 = new TimelineMax()
-							.to("#animate2_2_info", 4, {opacity: 1, delay: 5})
-							.to("#animate2_2_info", 1, {})
-
-						TweenMax.set("#animate2_3", {opacity:0, top: "620px"});
-						var tween_image3 = new TimelineMax()
-							.to("#animate2_3", 4, {opacity: 1, top:590, delay: 4})
-							.to("#animate2_3", 0.5, {/*opacity: 0.6,*/ top:580, delay: 1.5})
-
-						var tween_image_wrap = new TimelineMax()
-							.to("#animate2", 5, {height:690, delay: 5})
-
-						// build scene
-						var sceneOption = {
-							triggerElement: "#trigger2",
-							triggerHook: 0.0,
-							duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-							reverse: true
-						}
-						var scene = new ScrollMagic.Scene(sceneOption)
-										.setPin("#animate2")
-										//.addIndicators({name: "scene2 (duration: 100%)"})
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_title)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_image1)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_image2)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_image3)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_image_wrap)
 										.addTo(controller);
 					</script>
 				</section>
@@ -1450,16 +1465,15 @@
 			e.preventDefault();
 		})
 	</script>
+	
 	<div class="popup">
 		<div class="inner">
 			<a href="#none" class="close"><img src="../assets/img/popup_close.png" alt=""></a>
-			<div class="image">
-				<img src="../assets/img/popup_01.png" alt=""/>
-			</div>
 			<div class="content">
-				<strong>DCI-P3 란</strong>
-				<p>미국 영상 업계가 만든 디지털 영상 표준 색영역으로 숫자가 높을 수록 더 많은 색상을 정확하게 표현합니다. 색영역은 우리가 보는 색상의 범위를 말하며, 이 범위를 색상, 명도, 채도 기준으로 3차원의 입체적인 그래프로 표현한 것입니다. 이 영역이 넓고, 숫자가 높을 수록 더 많은 색상을 정확하게 표현합니다.</p>
-				<span><!-- LG 그램 16 : Typical 99 %, Min 95 % 표현 --></span>
+				<strong>저출력 레이저 치료 LLLT</strong>
+				<span>Low Level Light Therapy</span>
+				<p>레이저와 저출력 광선(LED)의 복합 빛 에너지가 모낭 세포에 흡수되어 세포의 전반적인 대사를 활성화시켜 주는 치료방법</p>
+				<p>광 기술력을 바탕으로 두피의 근본적인 자생력을 주는 건강한 치료방법으로 레이저와 LED가 모발의 성장은 돕고 퇴행기를 통해 탈모가 되는 것을 막아줍니다</p>
 			</div>
 		</div>
 		<div class="dim"></div>
