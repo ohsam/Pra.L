@@ -493,11 +493,11 @@
 							<ul class="effect">
 								<li>
 									<span class="name">모발 밀도</span>
-									<span class="num">21.64<em>%</em></span>
+									<span class="num" id="num01">0<em>%</em></span>
 								</li>
 								<li>
 									<span class="name">모발 굵기</span>
-									<span class="num">19.46<em>%</em></span>
+									<span class="num" id="num02">0<em>%</em></span>
 								</li>
 							</ul>
 							<ul class="bullet">
@@ -507,6 +507,25 @@
 						</div>
 					</div>
 					<script>
+						function count(){
+							var numbers = [
+								{ $el:$("#num01"), first:0, last:21.64, duration:2000 },
+								{ $el:$("#num02"), first:0, last:19.46, duration:2000 }
+							]
+
+							numbers.map((num) => {
+								$({ val : num.first }).animate({ val : num.last }, {
+									duration: num.duration,
+									step: function() {
+										num.$el.text(this.val.toFixed(2));
+									},
+									complete: function() {
+										num.$el.text(this.val.toFixed(2));
+									}
+								});
+							})
+						}
+
 						// tween_eye
 						TweenMax.set("#animate14_eye", {opacity:0, top: "140"});
                         var tween_eye = new TimelineMax()
@@ -557,7 +576,10 @@
 										.addTo(controller);
 						new ScrollMagic.Scene(sceneOption)
 										.setTween(tween_image2)
-										.addTo(controller);
+										.addTo(controller)
+										.on("enter", function (e) {
+											count();
+										});
 						new ScrollMagic.Scene(sceneOption_eye)
 										.setTween(tween_eye)
 										.addTo(controller);
