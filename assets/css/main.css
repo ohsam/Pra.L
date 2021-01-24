@@ -243,15 +243,6 @@ video {
 #animate8 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 #animate8 .desc {margin-top:17px;padding:0 25px;}
 
-
-#animate7 {}
-#animate7 .blank {padding-top:236px;padding-bottom:100%;}
-#animate7 .divider {position:absolute;left:0;width:100%;padding-bottom:100%;}
-#animate7 .divider .image {position:absolute;top:0;left:0;width:100%;overflow:hidden;}
-#animate7 .divider .image > img {display:block;width:100vw;}
-#animate7 .divider .drag {position:absolute;top:0;right:0;height:100%;}
-#animate7 .divider .drag img {height:100%;transform:translateX(-50%);}
-
 #animate14 {margin-top:30px;background:#ececec;}
 #animate14 .blank {padding-top:266px;padding-bottom:101.5%;}
 #animate14 .title .small {color:#999;}
@@ -277,59 +268,11 @@ video {
 #animate15A .quote .source {display:block;margin-top:34px;padding-left:5px;font-size:14px;line-height:18px;color:#888;}
 #animate15A .quote .talker {padding-left:5px;font-size:12px;color:#888;}
 
-#animate15 {}
-#animate15 .blank {height:50px;padding-top:63.2%;padding-bottom:662px;box-sizing:content-box;}
-#animate15 .icons {position:absolute;left:0;}
-#animate15 .icons img {display:block;width:100%;}
-#animate15 .performance {position:absolute;margin-bottom:75px;left:0;width:100%;}
-#animate15 .performance {padding:0 30px;}
-#animate15 .performance li {position:relative;padding:30px 0;}
-#animate15 .performance li:after {content:"";display:block;clear:both;}
-#animate15 .performance li + li {border-top:1px solid #303030;}
-#animate15 .performance .txt {position:relative;font-size:20px;color:#fff;}
-#animate15 .performance .image {position:relative;}
-#animate15 .performance .image img {display:block;width:100%;}
-#animate15 .performance .type1 .txt {float:left;width:calc(100% - 75px);padding-top:4px;}
-#animate15 .performance .type1 .image {float:right;width:75px;}
-#animate15 .performance .type2 .txt {width:100%;}
-#animate15 .performance .type2 .image {margin-top:12px;width:300px;}
-#animate15 .desc {position:absolute;left:0;width:100%;padding:0 20px;font-size:12px;}
-#animate15 .desc p + p {margin-top:3px;padding-left:8px;text-indent:-8px;}
-#animate15_1 .desc {width:100%;padding:0 20px;margin-top:20px;font-size:12px;}
-#animate15_1 .desc p + p {margin-top:3px;padding-left:8px;text-indent:-8px;}
-
-#animate15B {background-color:#000;}
-#animate15B .blank {height:587px;padding-top:50px;box-sizing:content-box;}
-#animate15B .performance {position:absolute;left:0;width:100%;}
-#animate15B .performance {padding:0 30px;}
-#animate15B .performance li {position:relative;padding:30px 0;}
-#animate15B .performance li:after {content:"";display:block;clear:both;}
-#animate15B .performance li + li {border-top:1px solid #303030;}
-#animate15B .performance .txt {position:relative;font-size:20px;color:#fff;}
-#animate15B .performance .image {position:relative;}
-#animate15B .performance .image img {display:block;width:100%;}
-#animate15B .performance .type1 .txt {float:left;width:calc(100% - 75px);padding-top:4px;}
-#animate15B .performance .type1 .image {float:right;width:75px;}
-#animate15B .performance .type2 .txt {width:100%;}
-#animate15B .performance .type2 .image {margin-top:12px;width:300px;}
-
-#animate15C {background-color:#000;}
-#animate15C .blank {height:76px;}
-#animate15C .desc {position:absolute;left:0;width:100%;padding:0 20px;font-size:12px;}
-#animate15C .desc p + p {margin-top:3px;padding-left:8px;text-indent:-8px;}
-
 #animate16 {}
 #animate16 .blank {padding-top:60px;padding-bottom:64%;}
 #animate16 .image {position:absolute;left:0;}
 #animate16 .image img {display:block;width:100%;}
 #animate16 .popupBtn {position:absolute;top:43%;left:41%;width:18%;height:27%;}
-
-#animate17 {background-image: linear-gradient(#343434 30%, #343434 31%, #252425 50%);}
-#animate17 .blank {padding-top:214px;padding-bottom:calc(100% + 30px);}
-#animate17 .video {position:absolute;left:0;width:100%;padding-bottom:100%;}
-#animate17 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
-#animate17 .title {color:#fff;}
-#animate17 .desc {position:absolute;left:25px;bottom:36px;width:calc(100% - 50px);}
 
 .popup.open {display:block;}
 .popup {display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:100;}
