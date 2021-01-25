@@ -150,7 +150,7 @@ video {
 #animate1_3 {position:relative;overflow: hidden;z-index:0;}
 #animate1_3 img {display:block;max-width:100%;}
 
-#animate2 {height:820px;overflow:hidden;color:#fff;/*background:#181715;*/background:#fff;}
+#animate2 {height:820px;overflow:hidden;color:#fff;background:#181715;}
 #animate2 .eyebrow {z-index:1;}
 #animate2_1 {z-index:1;}
 #animate2_1 .small {color:#999;}
