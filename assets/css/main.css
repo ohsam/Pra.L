@@ -138,7 +138,7 @@ video {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
 }
-#animate1 {background:#31302e;}
+#animate1 {background:#090909;}
 #animate1_1 {z-index:2;}
 #animate1_2 {position:absolute;width:100%;top:172px;z-index:1;}
 #animate1_2 > li {position:absolute;right:25px;}
@@ -161,12 +161,14 @@ video {
 
 #animate13 {}
 #animate13 .blank {padding-top:330px;padding-bottom:83.5%;}
-#animate13 .image {position:absolute;left:0;width:100%;overflow:hidden;}
-#animate13 .image img {display:block;width:100%;}
+/* #animate13 .image {position:absolute;left:0;width:100%;overflow:hidden;}
+#animate13 .image img {display:block;width:100%;} */
+#animate13 .video {position:absolute;left:0;width:100%;padding-bottom:83.5%;}
+#animate13 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 
 #animate5 {}
-#animate5 .blank {padding-top:332px;padding-bottom:75%;}
-#animate5 .video {position:absolute;left:0;width:100%;padding-bottom:75%;}
+#animate5 .blank {padding-top:332px;padding-bottom:100%;}
+#animate5 .video {position:absolute;left:0;width:100%;padding-bottom:100%;}
 #animate5 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 #animate5 .logo {position:absolute;left:25px;}
 #animate5 .logo img {display:block;width:80px;}
@@ -215,8 +217,10 @@ video {
 
 #animate18 {}
 #animate18 .blank {padding-top:212px;padding-bottom:94.5%;}
-#animate18 .image {position:absolute;left:0;}
-#animate18 .image img {display:block;width:100%;}
+/* #animate18 .image {position:absolute;left:0;}
+#animate18 .image img {display:block;width:100%;} */
+#animate18 .video {position:absolute;left:0;width:100%;padding-bottom:94.5%;}
+#animate18 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 #animate18 .desc {margin-top:16px;padding:0 25px;}
 
 #animate11 {}
@@ -263,7 +267,7 @@ video {
 #animate15A .quote {position:absolute;left:14px;right:14px;padding:44px 42px 29px 42px;background:#fff;border-radius:25px;box-shadow:0px 2px 4px 2px rgba(0, 0, 0, 0.08);}
 #animate15A .quote:before {content:"“";position:absolute;top:8px;left:18px;font-size:70px;font-weight:600;color:#f2f2f2;z-index:0;}
 #animate15A .quote:after {content:"”";position:absolute;bottom:36px;right:20px;font-size:70px;font-weight:600;color:#f2f2f2;z-index:0;}
-#animate15A .quote .message {position:relative;font-size:23px;line-height:32px;color:#999;font-weight:600;z-index:1;}
+#animate15A .quote .message {position:relative;font-size:23px;line-height:32px;color:#999;font-weight:600;z-index:1;letter-spacing:-0.2px;}
 #animate15A .quote .message strong {color:#222;}
 #animate15A .quote .source {display:block;margin-top:34px;padding-left:5px;font-size:14px;line-height:18px;color:#888;}
 #animate15A .quote .talker {padding-left:5px;font-size:12px;color:#888;}
