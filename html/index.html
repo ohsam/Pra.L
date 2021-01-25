@@ -183,11 +183,13 @@
 						
 						TweenMax.set("#animate2_3", {opacity:0, top: "750px"});
 						var tween_image3 = new TimelineMax()
-							.to("#animate2_3", 2, {opacity: 1, top:700, delay: 2.5})
-							.to("#animate2_3", 2, {opacity: 0.2, delay: 0.5})
+							.to("#animate2_3", 2, {opacity: 1, top:700, delay: 4})
+							// .to("#animate2_3", 4, {})
+							.to("#animate2_3", 4, {top:650, delay:10, ease:Cubic.easeIn})
 
 						var tween_image_wrap = new TimelineMax()
-							.to("#animate2", 5, {height:690, delay: 5})
+							// .to("#animate2", 5, {height:690, delay: 5})
+							.to("#animate2", 5, {height:750, delay: 5})
 
 						// build scene
 						var sceneOption = {
@@ -502,7 +504,7 @@
 							<p class="talk med"><span>충분히 검증이 되었나요?</span></p>
 						</div>
 						<div id="animate14_1" class="title">
-							<h2>임상시험으로 입증된 치료 효과</h2>
+							<h2>임상시험으로 입증된 <br/>치료 효과</h2>
 						</div>
 						<div id="animate14_2" class="image" style="background-color:#000;">
 							<img src="../assets/img/scene_14_01.png" alt="" />
@@ -814,7 +816,7 @@
 						}
 						var sceneOption2 = {
 							triggerElement: "#trigger9",
-							triggerHook: 0.5,
+							triggerHook: 0.75,
 							duration: "65%",
 							reverse: true
 						}
@@ -1334,7 +1336,7 @@
 					</script>
 				</section>
 
-				<section id="scene19" class="motionContent" style="margin-top:35px;">
+				<section id="scene19" class="motionContent" style="margin-top:75px;">
 					<div class="imageFitW">
 						<img src="../assets/img/scene_19.png" alt="reviews" />
 					</div>
