@@ -147,8 +147,8 @@ video {
 #animate1_2 > li .sub em {margin-left:4px;font-size:17px;font-weight:700;font-style:normal;}
 #animate1_2 > li .sub i {margin-top:1px;margin-left:5px;vertical-align: middle;}
 #animate1_2 > li .desc {font-size:16px;color:#b0b0b0;}
-#animate1_3 {position:relative;overflow: hidden;z-index:0;}
-#animate1_3 img {display:block;max-width:100%;}
+#animate1_3 {position:relative;height:520px;overflow:hidden;z-index:0;}
+#animate1_3 img {position:absolute;left:0;bottom:0;display:block;width:360px;height:520px;}
 
 #animate2 {height:820px;overflow:hidden;color:#fff;/*background:yellow;*/}
 #animate2 .eyebrow {z-index:1;}
