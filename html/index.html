@@ -153,8 +153,8 @@
 							<h2>집중해서 촘촘하게<br>치료 시스템</h2>
 							<p class="small">250개의 레이저와 LED 복합 빛 에너지가 모낭 세포 대사를 활성화하고 영양공급을 활발하게 하여 탈모를 치료합니다</p>
 						</div>
-						<div id="animate2_2">
-							<video id="animate2_2_video" src="../assets/mov/scene2_01.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
+						<div id="animate2_2" style="background-color:#181715;">
+							<video id="animate2_2_video" src="../assets/mov/scene2_01.mp4" muted="" playsinline="" autoplay="true" width="100%" height="100%" loop></video>
 						</div>
 						<div id="animate2_3" class="desc">
 							<ul class="bullet">
@@ -181,15 +181,15 @@
 							.to("#animate2_2", 5, {scale: 1, top:70, ease: Cubic.easeInOut})
 							.to("#animate2_2", 2, {top: 20, /*opacity: 0.6,*/ delay: 3, ease: Cubic.easeIn})
 						
-						TweenMax.set("#animate2_3", {opacity:0, top: "750px"});
+						TweenMax.set("#animate2_3", {opacity:0, bottom: "35px"});
 						var tween_image3 = new TimelineMax()
-							.to("#animate2_3", 2, {opacity: 1, top:700, delay: 4})
-							// .to("#animate2_3", 4, {})
-							.to("#animate2_3", 4, {top:700, delay:10, ease:Cubic.easeIn})
+							.to("#animate2_3", 1.5, {opacity: 1, bottom:65, delay: 6})
+							.to("#animate2_3", 2, {})
+							.to("#animate2_3", 4, {bottom:105, ease:Cubic.easeIn})
 
 						var tween_image_wrap = new TimelineMax()
 							// .to("#animate2", 5, {height:690, delay: 5})
-							.to("#animate2", 5, {height:750, delay: 5})
+							//.to("#animate2", 5, {height:750, delay: 5})
 
 						// build scene
 						var sceneOption = {
@@ -213,14 +213,14 @@
 										.addTo(controller);
 						new ScrollMagic.Scene(sceneOption)
 										.setTween(tween_image1)
-										.addTo(controller)
-										.on("enter leave", function (e) {
-											if(e.type == "enter"){
-												$("#animate2_2_video").get(0).play();
-											}else{
-												$("#animate2_2_video").get(0).pause();
-											}
-										});
+										.addTo(controller);
+										// .on("enter leave", function (e) {
+										// 	if(e.type == "enter"){
+										// 		$("#animate2_2_video").get(0).play();
+										// 	}else{
+										// 		$("#animate2_2_video").get(0).pause();
+										// 	}
+										// });
 						new ScrollMagic.Scene(sceneOption)
 										.setTween(tween_image3)
 										.addTo(controller);
@@ -1418,7 +1418,7 @@
 					<strong>모발 밀도</strong>
 					<ul class="bullet">
 						<li data-bullet="-">시험군 평균 18.34% (표준편차 10.47), 대조군 평균 -3.30% (표준편차 5.46)</li>
-						<li data-bullet="-">변화량 : 시험군 평균 13.53개 (표준편차 6.29), 대조군 평균 -2.94개 (표준편차 4.74)</li>
+						<li data-bullet="-">변화량 : 시험군 평균 13.53개 (표준편차 6.92), 대조군 평균 -2.94개 (표준편차 4.74)</li>
 					</ul>
 					<strong>모발 굵기</strong>
 					<ul class="bullet">
