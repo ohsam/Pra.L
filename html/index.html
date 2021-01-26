@@ -151,16 +151,16 @@
 						</div>
 						<div id="animate2_1" class="title">
 							<h2>집중해서 촘촘하게<br>치료 시스템</h2>
-							<p class="small">250개의 레이저와 LED 복합 빛 에너지가 모낭 세포 대사를 활성화하고 영양공급을 활발하게 하여 탈모를 치료합니다</p>
+							<p class="small">250개(레이저 146개, LED 104개)의 레이저와 LED 복합 빛 에너지가 모낭 세포 대사를 활성화하고 영양공급을 활발하게 하여 탈모를 치료합니다</p>
 						</div>
 						<div id="animate2_2" style="background-color:#181715;">
 							<video id="animate2_2_video" src="../assets/mov/scene2_01.mp4" muted="" playsinline="" autoplay="true" width="100%" height="100%" loop></video>
 						</div>
-						<div id="animate2_3" class="desc">
+						<!-- <div id="animate2_3" class="desc">
 							<ul class="bullet">
-								<li data-bullet="*">250개 광원 : 레이저 : 146개, LED 104개</li>
+								<li data-bullet="*">250개 광원 : 레이저 146개, LED 104개</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 					<script>
 						// tween_eye
@@ -181,15 +181,14 @@
 							.to("#animate2_2", 5, {scale: 1, top:70, ease: Cubic.easeInOut})
 							.to("#animate2_2", 2, {top: 20, /*opacity: 0.6,*/ delay: 3, ease: Cubic.easeIn})
 						
-						TweenMax.set("#animate2_3", {opacity:0, bottom: "35px"});
-						var tween_image3 = new TimelineMax()
-							.to("#animate2_3", 1.5, {opacity: 1, bottom:65, delay: 6})
-							.to("#animate2_3", 2, {})
-							.to("#animate2_3", 4, {bottom:105, ease:Cubic.easeIn})
+						// TweenMax.set("#animate2_3", {opacity:0, bottom: "35px"});
+						// var tween_image3 = new TimelineMax()
+						// 	.to("#animate2_3", 1.5, {opacity: 1, bottom:65, delay: 6})
+						// 	.to("#animate2_3", 2, {})
+						// 	.to("#animate2_3", 4, {bottom:105, ease:Cubic.easeIn})
 
 						var tween_image_wrap = new TimelineMax()
-							// .to("#animate2", 5, {height:690, delay: 5})
-							//.to("#animate2", 5, {height:750, delay: 5})
+							.to("#animate2", 0.5, {height:"83vh", delay: 9.5})
 
 						// build scene
 						var sceneOption = {
@@ -221,9 +220,9 @@
 										// 		$("#animate2_2_video").get(0).pause();
 										// 	}
 										// });
-						new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_image3)
-										.addTo(controller);
+						// new ScrollMagic.Scene(sceneOption)
+						// 				.setTween(tween_image3)
+						// 				.addTo(controller);
 						new ScrollMagic.Scene(sceneOption)
 										.setTween(tween_image_wrap)
 										.addTo(controller);
@@ -547,26 +546,26 @@
 						}
 
 						// tween_eye
-						TweenMax.set("#animate14_eye", {opacity:0, top: "140"});
+						TweenMax.set("#animate14_eye", {opacity:0, top: "170"});
                         var tween_eye = new TimelineMax()
-                            .to("#animate14_eye", 3, {top: 60, opacity: 1})
+                            .to("#animate14_eye", 3, {top: 90, opacity: 1})
 							.to("#animate14_eye", 3, {/*opacity: 0.6,*/ delay: 4})
 
 						// tween_title
-						TweenMax.set("#animate14_1", {opacity:0, top: "185"});
+						TweenMax.set("#animate14_1", {opacity:0, top: "215"});
 						var tween_title = new TimelineMax()
-							.to("#animate14_1", 3, {top: 105, opacity: 1})
+							.to("#animate14_1", 3, {top: 135, opacity: 1})
 							.to("#animate14_1", 3, {delay: 4})
 
 						//tween_image
-						TweenMax.set("#animate14_2", {opacity: 0, top:"346"});
+						TweenMax.set("#animate14_2", {opacity: 0, top:"376"});
 						var tween_image1 = new TimelineMax()
-							.to("#animate14_2", 3, {opacity:1, top:296})
+							.to("#animate14_2", 3, {opacity:1, top:326})
 							.to("#animate14_2", 1, {delay: 6})
 
-						TweenMax.set("#animate14_3", {opacity: 0, top:"280"});
+						TweenMax.set("#animate14_3", {opacity: 0, top:"310"});
 						var tween_image2 = new TimelineMax()
-							.to("#animate14_3", 2.5, {opacity:1, top:200, delay:0.5})
+							.to("#animate14_3", 2.5, {opacity:1, top:230, delay:0.5})
 							.to("#animate14_3", 1, {delay: 6})
 
 						// build scene

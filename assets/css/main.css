@@ -150,7 +150,7 @@ video {
 #animate1_3 {position:relative;height:520px;overflow:hidden;z-index:0;}
 #animate1_3 img {position:absolute;left:0;bottom:0;display:block;width:360px;height:520px;}
 
-#animate2 {height:820px;overflow:hidden;color:#fff;/*background:yellow;*/}
+#animate2 {height:100vh;overflow:hidden;color:#fff;/*background:yellow;*/}
 #animate2 .eyebrow {z-index:1;}
 #animate2_1 {z-index:1;}
 #animate2_1 .small {color:#999;}
@@ -248,7 +248,7 @@ video {
 #animate8 .desc {margin-top:17px;padding:0 25px;}
 
 #animate14 {margin-top:30px;background:#ececec;}
-#animate14 .blank {padding-top:266px;padding-bottom:101.5%;}
+#animate14 .blank {padding-top:296px;padding-bottom:101.5%;}
 #animate14 .title .small {color:#999;}
 #animate14 .bullet {margin-top:3px;}
 #animate14 .image {position:absolute;left:0;}
