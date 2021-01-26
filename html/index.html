@@ -176,25 +176,30 @@
 							.to("#animate2_1", 2.5, {/*opacity: 0.8, */top:46, delay: 2.5, ease: Cubic.easeIn})
 							
 						// tween_image
-						TweenMax.set("#animate2_2", {scale: "2.5", opacity:0, top: "-100px"});
+						TweenMax.set("#animate2_2", {scale: "2.5", top: "-100px"});
 						var tween_image1 = new TimelineMax()
-							.to("#animate2_2", 5, {scale: 1, opacity:1, top:70, ease: Cubic.easeInOut})
+							.to("#animate2_2", 5, {scale: 1, top:70, ease: Cubic.easeInOut})
 							.to("#animate2_2", 2, {top: 20, /*opacity: 0.6,*/ delay: 3, ease: Cubic.easeIn})
 						
-						// TweenMax.set("#animate2_3", {opacity:0, bottom: "35px"});
-						// var tween_image3 = new TimelineMax()
-						// 	.to("#animate2_3", 1.5, {opacity: 1, bottom:65, delay: 6})
-						// 	.to("#animate2_3", 2, {})
-						// 	.to("#animate2_3", 4, {bottom:105, ease:Cubic.easeIn})
+						TweenMax.set("#animate2_2", {opacity: 0});
+						var tween_image2 = new TimelineMax()
+							.to("#animate2_2", 5, {opacity:1})
+							.to("#animate2_2", 5, {})
 
 						var tween_image_wrap = new TimelineMax()
-							.to("#animate2", 0.5, {height:"83vh", delay: 9.5})
+							//.to("#animate2", 0.5, {height:"83vh", delay: 9.5})
 
 						// build scene
 						var sceneOption = {
 							triggerElement: "#trigger2",
 							triggerHook: 0.0,
 							duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+							reverse: true
+						}
+						var sceneOption2 = {
+							triggerElement: "#trigger2",
+							triggerHook: 0.5,
+							duration: "65%",
 							reverse: true
 						}
 						var sceneOption_eye = {
@@ -225,6 +230,9 @@
 						// 				.addTo(controller);
 						new ScrollMagic.Scene(sceneOption)
 										.setTween(tween_image_wrap)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption2)
+										.setTween(tween_image2)
 										.addTo(controller);
 						new ScrollMagic.Scene(sceneOption_eye)
 										.setTween(tween_eye)
