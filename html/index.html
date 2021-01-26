@@ -176,9 +176,9 @@
 							.to("#animate2_1", 2.5, {/*opacity: 0.8, */top:46, delay: 2.5, ease: Cubic.easeIn})
 							
 						// tween_image
-						TweenMax.set("#animate2_2", {scale: "2.5", top: "-100px"});
+						TweenMax.set("#animate2_2", {scale: "2.5", opacity:0, top: "-100px"});
 						var tween_image1 = new TimelineMax()
-							.to("#animate2_2", 5, {scale: 1, top:70, ease: Cubic.easeInOut})
+							.to("#animate2_2", 5, {scale: 1, opacity:1, top:70, ease: Cubic.easeInOut})
 							.to("#animate2_2", 2, {top: 20, /*opacity: 0.6,*/ delay: 3, ease: Cubic.easeIn})
 						
 						// TweenMax.set("#animate2_3", {opacity:0, bottom: "35px"});
