@@ -38,7 +38,7 @@
 							<div class="model">메디헤어 HGN2V</div>
 						</div>
 						<ul>
-							<li><a href="#" data-target-scroll-top="1068">기술력</a></li>
+							<li><a href="#" data-target-scroll-top="1068">치료원리</a></li>
 							<li><a href="#" data-target-scroll-top="3292">안전성</a></li>
 							<li><a href="#" data-target-scroll-top="5076">사용편의</a></li>
 							<li><a href="#" data-target-scroll-top="8203">활용팁</a></li>
@@ -333,7 +333,7 @@
 						</div>
 						<div id="animate6_1" class="title">
 							<h2>더 촘촘하고 더 넓게<br>모든 영역을 커버</h2>
-							<p class="small">LG프라엘만의 핵심 기술 웨이브 가이드를 사용하여 많은 양의 레이저 빛을 더 넓게 치료할 수 있습니다</p>
+							<p class="small">LG프라엘만의 핵심 기술 웨이브 가이드를 사용하여 많은 양의 레이저 빛을 더 넓게 조사할 수 있습니다</p>
 						</div>
 						<div id="animate6_2" class="divider">
 							<div class="container" data-offset-pct="0.5">
@@ -342,9 +342,12 @@
 							</div>
 						</div>
 						<div id="animate6_3" class="desc">
+              <strong>웨이브가이드(Waveguide)</strong>
 							<ul class="bullet">
 								<li data-bullet="*">
-									<em>웨이브가이드(Waveguide)</em> <br>
+									광원 간격 : 7mm~12mm
+								</li>
+								<li data-bullet="*">
 									일반적인 LD(레이저) 대비 광원 간 간격을 좁게 하여 치료 효율을 최적화한 정밀한 광학 제어 기술로 거울식 반사 장치를 적용하여 더 넓은 면적에 레이저 빛을 분사할 수 있습니다 
 								</li>
 							</ul>
@@ -406,103 +409,8 @@
 										.setTween(tween_eye)
 										.addTo(controller);
 					</script>
-				</section>
-
-				<section id="scene5" class="motionContent">
-					<div id="trigger5" class="spacer s0"></div>
-					<div id="animate5_scroll_from" style="position:absolute;top:-480px;left:0"></div>
-					<div id="animate5_scroll_to" style="position:absolute;top:30px;left:0"></div>
-					<div id="animate5">
-						<div class="blank"></div>
-						<div id="animate5_eye" class="eyebrow">
-							<p class="talk light"><span>믿을 수 있는 제품인가요?</span></p>
-						</div>
-						<div id="animate5_1" class="title">
-							<h2>믿고 맡길 수 있는<br>메디헤어의 자신감</h2>
-							<p class="small">한국식약처 허가와 미국 FDA 인가를 받은 <br>안드로겐성 탈모치료 의료기기입니다</p>
-							<a href="javascript:void(0);" class="button popupBtn" data-popup-id="popup02">사용목적 알아보기</a>
-						</div>
-						<div id="animate5_2" class="video" style="background-color:#000;">
-							<video id="animate5_2_video" src="../assets/mov/scene5_01.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
-						</div>
-						<div id="animate5_3" class="desc">
-							<ul class="bullet">
-								<li data-bullet="*">식품 의약품 안전처로부터 가정용 탈모치료 의료기기 3등급 허가</li>
-								<li data-bullet="*">미국 식품의약국(FDA)로부터 탈모치료를 위한 의료기기 Class2 승인 </li>
-								<li data-bullet="*">품목명 : 의료용 레이저 조사기</li>
-								<li data-bullet="*">메디헤어 허가번호 : 제허 20-780호</li>
-							</ul>
-						</div>
-					</div>
-					<script>
-						// tween_eye
-						TweenMax.set("#animate5_eye", {opacity:0, top: "140"});
-                        var tween_eye = new TimelineMax()
-                            .to("#animate5_eye", 3, {top: 60, opacity: 1})
-							.to("#animate5_eye", 3, {/*opacity: 0.6,*/ delay: 4})
-
-						// tween_title
-						TweenMax.set("#animate5_1", {opacity:0, top: "185"});
-                        var tween_title = new TimelineMax()
-                            .to("#animate5_1", 3, {top: 105, opacity: 1})
-							.to("#animate5_1", 3, {/*opacity: 0.6,*/ delay: 4})
-
-						//tween_image
-						TweenMax.set("#animate5_2", {opacity: 0, top:"382"});
-						var tween_image1 = new TimelineMax()
-							.to("#animate5_2", 3, {opacity:1, top:332})
-							.to("#animate5_2", 1, {/*opacity: 0.6,*/ delay: 6})
-
-						// build scene
-						var sceneOption = {
-							triggerElement: "#trigger5",
-							triggerHook: 0.6,
-							duration: "70%",
-							reverse: true
-						}
-						var sceneOption2 = {
-							triggerElement: "#trigger5",
-							triggerHook: 0.5,
-							duration: "65%",
-							reverse: true
-						}
-						var sceneOption_video = {
-							triggerElement: "#animate5_2",
-							triggerHook: 0.5,
-							duration: "60%",
-							reverse: true
-						}
-						var sceneOption_eye = {
-							triggerElement: "#trigger5",
-							triggerHook: 0.64,
-							duration: "82%",
-							reverse: true
-						}
-						var scene =  new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_title)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption2)
-										.setTween(tween_image1)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption_video)
-										//.addIndicators({name: "5 video (duration: 65%)"})
-										.addTo(controller)
-										.on("update", function (e) {
-											//console.log(e.target.controller().info("scrollDirection"));
-										})
-										.on("enter leave", function (e) {
-											if(e.type == "enter"){
-												$("#animate5_2_video").get(0).play();
-											}else{
-												$("#animate5_2_video").get(0).pause();
-											}
-										});
-						new ScrollMagic.Scene(sceneOption_eye)
-										.setTween(tween_eye)
-										.addTo(controller);
-					</script>
-				</section>
-
+        </section>
+        
 				<section id="scene14" class="motionContent">
 					<div id="trigger14" class="spacer s0"></div>
 					<div id="animate14">
@@ -619,7 +527,7 @@
 					<div id="animate15A">
 						<div class="blank"></div>
 						<div id="animate15_1" class="quote">
-							<p class="message">가정용 LLLT 장치 <br/><strong>LG 프라엘 메디헤어</strong>가 <br/>남성과 여성의 안드로겐성 <br/><strong>탈모환자에게 효과적으로 <br/>안전한</strong> 치료방법으로 본다</p>
+							<p class="message">가정용 LLLT 장치 <br/>LG 프라엘 메디헤어가 <br/>안드로겐 탈모환자에게<br/><strong>효과적으로 안전한 치료</strong><br>방법으로 본다</p>
 							<span class="source">탈모 치료 의료기기에 관한 논문 인용</span>
 							<span class="talker">Jee-Woo Kim 외 6명/ 2020년 8월</span>
 						</div>
@@ -645,6 +553,194 @@
 					</script>
 				</section>
 
+				<section id="scene5" class="motionContent">
+					<div id="trigger5" class="spacer s0"></div>
+					<div id="animate5_scroll_from" style="position:absolute;top:-480px;left:0"></div>
+					<div id="animate5_scroll_to" style="position:absolute;top:30px;left:0"></div>
+					<div id="animate5">
+						<div class="blank"></div>
+						<div id="animate5_eye" class="eyebrow">
+							<p class="talk light"><span>믿을 수 있는 제품인가요?</span></p>
+						</div>
+						<div id="animate5_1" class="title">
+							<h2>믿고 맡길 수 있는<br>메디헤어의 자신감</h2>
+							<p class="small">한국식약처 허가와 미국 FDA 승인을 받은 <br>안드로겐성 탈모치료 의료기기입니다</p>
+							<a href="javascript:void(0);" class="button popupBtn" data-popup-id="popup02">탈모치료 의료기기란?</a>
+						</div>
+						<div id="animate5_2" class="video" style="background-color:#000;">
+							<video id="animate5_2_video" src="../assets/mov/scene5_01.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
+						</div>
+						<div id="animate5_3" class="desc">
+							<ul class="bullet">
+								<li data-bullet="*">식품 의약품 안전처로부터 가정용 탈모치료 의료기기 3등급 허가</li>
+								<li data-bullet="*">미국 식품의약국(FDA)로부터 탈모치료를 위한 의료기기 Class2 승인 </li>
+								<li data-bullet="*">품목명 : 의료용 레이저 조사기</li>
+								<li data-bullet="*">메디헤어 허가번호 : 제허 20-780호</li>
+							</ul>
+						</div>
+					</div>
+					<script>
+						// tween_eye
+						TweenMax.set("#animate5_eye", {opacity:0, top: "140"});
+                        var tween_eye = new TimelineMax()
+                            .to("#animate5_eye", 3, {top: 60, opacity: 1})
+							.to("#animate5_eye", 3, {/*opacity: 0.6,*/ delay: 4})
+
+						// tween_title
+						TweenMax.set("#animate5_1", {opacity:0, top: "185"});
+                        var tween_title = new TimelineMax()
+                            .to("#animate5_1", 3, {top: 105, opacity: 1})
+							.to("#animate5_1", 3, {/*opacity: 0.6,*/ delay: 4})
+
+						//tween_image
+						TweenMax.set("#animate5_2", {opacity: 0, top:"382"});
+						var tween_image1 = new TimelineMax()
+							.to("#animate5_2", 3, {opacity:1, top:332})
+							.to("#animate5_2", 1, {/*opacity: 0.6,*/ delay: 6})
+
+						// build scene
+						var sceneOption = {
+							triggerElement: "#trigger5",
+							triggerHook: 0.6,
+							duration: "70%",
+							reverse: true
+						}
+						var sceneOption2 = {
+							triggerElement: "#trigger5",
+							triggerHook: 0.5,
+							duration: "65%",
+							reverse: true
+						}
+						var sceneOption_video = {
+							triggerElement: "#animate5_2",
+							triggerHook: 0.5,
+							duration: "60%",
+							reverse: true
+						}
+						var sceneOption_eye = {
+							triggerElement: "#trigger5",
+							triggerHook: 0.64,
+							duration: "82%",
+							reverse: true
+						}
+						var scene =  new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_title)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption2)
+										.setTween(tween_image1)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption_video)
+										//.addIndicators({name: "5 video (duration: 65%)"})
+										.addTo(controller)
+										.on("update", function (e) {
+											//console.log(e.target.controller().info("scrollDirection"));
+										})
+										.on("enter leave", function (e) {
+											if(e.type == "enter"){
+												$("#animate5_2_video").get(0).play();
+											}else{
+												$("#animate5_2_video").get(0).pause();
+											}
+										});
+						new ScrollMagic.Scene(sceneOption_eye)
+										.setTween(tween_eye)
+										.addTo(controller);
+					</script>
+				</section>
+
+				<section id="scene4" class="motionContent">
+					<div id="trigger4" class="spacer s0"></div>
+					<div id="animate4">
+						<div class="blank"></div>
+						<div id="animate4_eye" class="eyebrow">
+							<p class="talk light"><span>안전하게 사용할 수 있나요?</span></p>
+						</div>
+						<div id="animate4_1" class="title">
+							<h2>전문 의료 기기니까<br>한번 더 까다롭게</h2>
+							<p class="small">2개의 착용 감지 센서로 올바르게 착용했는지 감지한 뒤에 작동되어 안전하게 사용 </p>
+						</div>
+						<div id="animate4_2" class="video" style="background-color:#fff;">
+							<video id="animate4_2_video" src="../assets/mov/scene4_01.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
+						</div>
+					</div>
+					<script>
+						// tween_eye
+						TweenMax.set("#animate4_eye", {opacity:0, top: "140"});
+                        var tween_eye = new TimelineMax()
+                            .to("#animate4_eye", 3, {top: 60, opacity: 1})
+							.to("#animate4_eye", 3, {/*opacity: 0.6,*/ delay: 4})
+
+						// tween_title
+						TweenMax.set("#animate4_1", {opacity:0, top: "185"});
+                        var tween_title = new TimelineMax()
+                            .to("#animate4_1", 3, {top: 105, opacity: 1})
+							.to("#animate4_1", 3, {/*opacity: 0.6,*/ delay: 4})
+
+						//tween_image
+						TweenMax.set("#animate4_2", {opacity: 0, top:"338"});
+						var tween_image1 = new TimelineMax()
+							.to("#animate4_2", 3, {opacity:1, top:288})
+							.to("#animate4_2", 1, {/*opacity: 0.6,*/ delay: 6})
+						
+						// build scene
+						var sceneOption = {
+							triggerElement: "#trigger4",
+							triggerHook: 0.6,
+							duration: "70%",
+							reverse: true
+						}
+						var sceneOption2 = {
+							triggerElement: "#trigger4",
+							triggerHook: 0.5,
+							duration: "65%",
+							reverse: true
+						}
+						var sceneOption_video = {
+							triggerElement: "#animate4_2",
+							triggerHook: 0.5,
+							duration: "60%",
+							reverse: true
+						}
+						var sceneOption_eye = {
+							triggerElement: "#trigger4",
+							triggerHook: 0.64,
+							duration: "82%",
+							reverse: true
+						}
+						var scene =  new ScrollMagic.Scene(sceneOption)
+										.setTween(tween_title)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption2)
+										.setTween(tween_image1)
+										.addTo(controller);
+						new ScrollMagic.Scene(sceneOption_video)
+										.addTo(controller)
+										.on("update", function (e) {
+											//console.log(e.target.controller().info("scrollDirection"));
+										})
+										.on("enter leave", function (e) {
+											if(e.type == "enter"){
+												$("#animate4_2_video").get(0).play();
+											}else{
+												$("#animate4_2_video").get(0).pause();
+											}
+										})
+										.on("start end", function (e) {
+											if(e.type == "start"){
+												console.log('last Hit:: top');
+											}else{
+												console.log('last Hit:: bottom');
+											}
+										})
+										.on("progress", function (e) {
+											console.log('progress');
+										});
+						new ScrollMagic.Scene(sceneOption_eye)
+										.setTween(tween_eye)
+										.addTo(controller);
+					</script>
+        </section>
+        
 				<section id="scene3" class="motionContent">
 					<div id="trigger3" class="spacer s0"></div>
 					<div id="animate3">
@@ -653,7 +749,7 @@
 							<p class="talk light"><span>쉽게 사용할 수 있나요?</span></p>
 						</div>
 						<div id="animate3_1" class="title">
-							<h2>나도 모르는 탈모까지<br>자동 맞춤 모드로</h2>
+							<h2>버튼 하나만 누르면<br>맞춤 모드를 추천</h2>
 							<p class="small">마이케어 모드가 탈모 부분을 자동 감지하여 나에게 맞는 치료모드를 추천해 줍니다</p>
 						</div>
 						<div id="animate3_2" class="video" style="background-color:#fff;">
@@ -760,7 +856,7 @@
 									<li class="swiper-slide">
 										<div class="txt">
 											<strong>탑케어 모드<span>/ 18분</span></strong>
-											<p>윗머리/정수리의 모발 굵기/밀도가 떨어지는 경우</p>
+											<p>윗머리 정수리의 모발 굵기<br>밀도가 떨어지는 경우</p>
 										</div>
 										<div class="video" style="background-color:#fff;">
 											<video src="../assets/mov/scene9_03.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
@@ -845,81 +941,6 @@
 										});;
 					</script>
 				</section>
-
-				<section id="scene4" class="motionContent">
-					<div id="trigger4" class="spacer s0"></div>
-					<div id="animate4">
-						<div class="blank"></div>
-						<div id="animate4_1" class="title">
-							<h2>전문 의료 기기니까<br>한번 더 까다롭게</h2>
-							<p class="small">2개의 착용 감지 센서로 올바르게 착용했는지 감지한 뒤에 작동되어 안전하게 사용 </p>
-						</div>
-						<div id="animate4_2" class="video" style="background-color:#fff;">
-							<video id="animate4_2_video" src="../assets/mov/scene4_01.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
-						</div>
-					</div>
-					<script>
-						// tween_title
-						TweenMax.set("#animate4_1", {opacity:0, top: "140"});
-                        var tween_title = new TimelineMax()
-                            .to("#animate4_1", 3, {top: 60, opacity: 1})
-							.to("#animate4_1", 3, {/*opacity: 0.6,*/ delay: 4})
-
-						//tween_image
-						TweenMax.set("#animate4_2", {opacity: 0, top:"276"});
-						var tween_image1 = new TimelineMax()
-							.to("#animate4_2", 3, {opacity:1, top:226})
-							.to("#animate4_2", 1, {/*opacity: 0.6,*/ delay: 6})
-						
-						// build scene
-						var sceneOption = {
-							triggerElement: "#trigger4",
-							triggerHook: 0.6,
-							duration: "70%",
-							reverse: true
-						}
-						var sceneOption2 = {
-							triggerElement: "#trigger4",
-							triggerHook: 0.5,
-							duration: "65%",
-							reverse: true
-						}
-						var sceneOption_video = {
-							triggerElement: "#animate4_2",
-							triggerHook: 0.5,
-							duration: "60%",
-							reverse: true
-						}
-						var scene =  new ScrollMagic.Scene(sceneOption)
-										.setTween(tween_title)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption2)
-										.setTween(tween_image1)
-										.addTo(controller);
-						new ScrollMagic.Scene(sceneOption_video)
-										.addTo(controller)
-										.on("update", function (e) {
-											//console.log(e.target.controller().info("scrollDirection"));
-										})
-										.on("enter leave", function (e) {
-											if(e.type == "enter"){
-												$("#animate4_2_video").get(0).play();
-											}else{
-												$("#animate4_2_video").get(0).pause();
-											}
-										})
-										.on("start end", function (e) {
-											if(e.type == "start"){
-												console.log('last Hit:: top');
-											}else{
-												console.log('last Hit:: bottom');
-											}
-										})
-										.on("progress", function (e) {
-											console.log('progress');
-										});
-					</script>
-				</section>
 				
 				<section id="scene10" class="motionContent">
 					<div id="trigger10" class="spacer s0"></div>
@@ -928,8 +949,9 @@
 					<div id="animate10">
 						<div class="blank"></div>
 						<div id="animate10_1" class="title">
+              <span class="caption">밴드 조절 다이얼</span>
 							<h2>오직 나에게로 집중<br>편안함을 맞추다</h2>
-							<p class="small">사이즈 조절 다이얼로 간단하고 쉽게 <br>머리 둘레를 조정하여 편안한 착용감 제공</p>
+							<p class="small">간단하고 쉽게 머리 둘레를 조정하여 편안한 착용감</p>
 						</div>
 						<div id="animate10_2" class="video" style="background-color:#fff;">
 							<video id="animate10_2_video" src="../assets/mov/scene10_01.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
@@ -943,9 +965,9 @@
 							.to("#animate10_1", 3, {/*opacity: 0.6,*/ delay: 4})
 
 						//tween_image
-						TweenMax.set("#animate10_2", {opacity: 0, top:"276"});
+						TweenMax.set("#animate10_2", {opacity: 0, top:"291"});
 						var tween_image1 = new TimelineMax()
-							.to("#animate10_2", 3, {opacity:1, top:226})
+							.to("#animate10_2", 3, {opacity:1, top:241})
 							.to("#animate10_2", 1, {/*opacity: 0.6,*/ delay: 6})
 
 						// build scene
@@ -993,8 +1015,9 @@
 					<div id="animate18">
 						<div class="blank"></div>
 						<div id="animate18_1" class="title">
+              <span class="caption">음성 가이드</span>
 							<h2>처음 사용해도<br>혼자서도 OK</h2>
-							<p class="small">음성가이드로 쉬운 사용</p>
+							<!-- <p class="small">음성가이드로 쉬운 사용</p>  -->
 						</div>
 						<!-- <div id="animate18_2" class="image">
 							<img src="../assets/img/scene_18_01.png" alt="">
@@ -1005,8 +1028,8 @@
 						<div id="animate18_3" class="desc" >
 							<ul class="bullet">
 								<li data-bullet="*">언어 변경 : 한국어 / 영어 / 중국어</li>
-								<li data-bullet="*">음성 가이드를 끄거나 효과음 모드로만 설정하려면 기기가 켜진 상태에서 전원 버튼을 길게 5초를 누르세요</li>
 								<li data-bullet="*">음성 가이드 언어 변경 : 기기가 켜진 상태에서 전원과 Mode 버튼을 동시에 약 3초를 눌러 언어 변경이 가능합니다 </li>
+								<li data-bullet="*">음성 가이드를 끄거나 효과음 모드로만 설정하려면 기기가 켜진 상태에서 전원 버튼을 길게 5초를 누르세요</li>
 							</ul>
 						</div>
 					</div>
@@ -1018,9 +1041,9 @@
 							.to("#animate18_1", 3, {/*opacity: 0.6,*/ delay: 4})
 
 						//tween_image
-						TweenMax.set("#animate18_2", {opacity: 0, top:"262"});
+						TweenMax.set("#animate18_2", {opacity: 0, top:"257"});
 						var tween_image1 = new TimelineMax()
-							.to("#animate18_2", 3, {opacity:1, top:212})
+							.to("#animate18_2", 3, {opacity:1, top:207})
 							.to("#animate18_2", 1, {/*opacity: 0.6,*/ delay: 6})
 
 						TweenMax.set("#animate18_3", {opacity: 0});
@@ -1110,7 +1133,7 @@
 						</div>
 						<div id="animate11_1" class="title">
 							<h2>집이니까 <br>맘대로 자유롭게 </h2>
-							<p class="small">일상 생활을 하면서 자유롭게 탈모 치료를 할 수 있습니다</p>
+							<p class="small">무선으로 착용 중에도 움직임이 편하고<br>사용이 번거롭지 않아 꾸준한 치료가 가능합니다</p>
 						</div>
 						<div id="animate11_2" class="video" style="background-color:initial;">
 							<video id="animate11_2_video" src="../assets/mov/scene11_01.mp4" muted="" playsinline="" width="100%" height="100%" loop></video>
@@ -1406,10 +1429,10 @@
 		<div class="inner">
 			<a href="javascript:void(0);" class="close"><img src="../assets/img/popup_close.png" alt=""></a>
 			<div class="content">
-				<strong class="name">메디헤어 사용목적</strong>
-				<p>본 제품은 Norwood Hamilton 분류의 lla에서 V에 해당 하는 안드로겐성 탈모증 남성 및 Ludwig 분류의 I에서 II인 안드로겐성 탈모증 여성이거나 BASP specific type VI에서 F2인 안드로겐성 탈모증 그리고 Fitzpatrick 피부 유형 I에서 IV에 해당하는 안드로겐성 탈모증의 탈모 치료에 사용하는 기구</p>
+				<strong class="name">탈모치료 의료기기란?</strong>
+				<p>메디헤어는 의료용 레이저 조사기로<br >Norwood Hamilton 분류의 lla에서 V에 해당 하는 안드로겐성 탈모증 남성 및 Ludwig 분류의 I에서 II인 안드로겐성 탈모증 여성이거나 BASP specific type VI에서 F2인 안드로겐성 탈모증 그리고 Fitzpatrick 피부 유형 I에서 IV에 해당하는 안드로겐성 탈모증의 탈모 치료에 사용하는 기구</p>
 				<ul class="bullet">
-					<li data-bullet="*"><em>안드로겐성 탈모증</em><br>남성과 여성 모두에게 가장 흔하게 확인되는 탈모 유형으로 남성 호르몬 작용 안드로겐과 유전적 요인에 의해 머리카락 밀도가 감소하고 모발이 빠지는 탈모 질환</li>
+					<li data-bullet="*"><em>안드로겐성 탈모증</em><br>남성과 여성 모두에게 가장 흔하게 확인되는 탈모 유형으로 남성 호르몬 작용 안드로겐과 유전적 요인에 의해 머리카락 밀도가 감소하고 모발이 빠지는 탈모 질환입니다</li>
 					<li data-bullet="*">이 제품은 ‘의료기기’이며, ‘사용상의 주의사항’과 ‘사용방법’을 잘 읽고 사용하십시오</li>
 				</ul>
 			</div>
@@ -1425,11 +1448,13 @@
 				<div class="scroll" style="padding-right:18px;">
 					<strong>모발 밀도</strong>
 					<ul class="bullet">
+						<li data-bullet="-">16.47개/cm2</li>
 						<li data-bullet="-">시험군 평균 18.34% (표준편차 10.47), 대조군 평균 -3.30% (표준편차 5.46)</li>
 						<li data-bullet="-">변화량 : 시험군 평균 13.53개 (표준편차 6.92), 대조군 평균 -2.94개 (표준편차 4.74)</li>
 					</ul>
 					<strong>모발 굵기</strong>
 					<ul class="bullet">
+						<li data-bullet="-">15.29um(마이크로 미터)</li>
 						<li data-bullet="-">시험군 평균 16.29% (표준편차 13.45), 대조군 평균 -3.17% (표준편차 13.01)</li>
 						<li data-bullet="-">변화량 : 시험군 평균 11.82um (표준편차 9.51), 대조군 평균 -3.47um(표준편차 8.73)</li>
 					</ul>

@@ -70,6 +70,7 @@ html.lock {overflow:hidden;}
 .title h2 {margin:0;padding:0;font-size:32px;font-weight:700;}
 .title .small {margin-top:9px;font-size:15px;line-height:23px;}
 .title .button {margin-top:15px;display:inline-block;padding:0 14px;font-size:14px;line-height:30px;height:30px;border:1px solid #666;border-radius:16px;box-sizing:content-box;}
+.title .caption {display:block;margin-bottom:8px;font-size:16px;color:#606060;}
 .small.indent {text-indent:-9px;padding-left:9px;word-break:keep-all;}
 .small.indent:before {content:'* ';}
 .small.indent.wb-normal {word-break:normal;}
@@ -123,7 +124,7 @@ i.circ-arrow-down {display:inline-block;width:15px;height:16px;background:url(".
 .swiper-pagination-bullet-active {background-color:#e42f66 !important;}
 
 /* twentytwenty */
-.twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-handle {margin-top:15px;margin-left:-15px;top:74.5%;width:31px;height:31px;border:0;background-color:#e1e2e4;box-shadow:none;}
+.twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-handle {margin-top:6px;margin-left:-15px;top:74.5%;width:31px;height:31px;border:0;background-color:#e1e2e4;box-shadow:none;}
 .twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-handle:before,
 .twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-handle:after {margin-top:0;margin-bottom:0;width:1px;margin-left:0;background-color:#e1e2e4;}
 .twentytwenty-wrapper.twentytwenty-horizontal .twentytwenty-left-arrow,
@@ -184,6 +185,7 @@ video {
 #animate6 .divider .drag {position:absolute;top:0;right:0;height:100%;}
 #animate6 .divider .drag img {height:100%;transform:translateX(-50%);}
 #animate6 .desc {margin-top:20px;padding:0 25px;}
+#animate6 .desc strong {display:block;padding-bottom:3px;color:#999;font-size:12px;}
 
 #animate3 {}
 #animate3_1 {z-index:1;}
@@ -211,15 +213,15 @@ video {
 #animate4 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 
 #animate10 {}
-#animate10 .blank {padding-top:226px;padding-bottom:83.5%;}
-#animate10 .video {position:absolute;left:0;width:100%;padding-bottom:83.5%;}
+#animate10 .blank {padding-top:241px;padding-bottom:75.2%;}
+#animate10 .video {position:absolute;left:20px;right:20px;padding-bottom:75.2%;}
 #animate10 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 
 #animate18 {}
-#animate18 .blank {padding-top:212px;padding-bottom:94.5%;}
+#animate18 .blank {padding-top:207px;padding-bottom:85%;}
 /* #animate18 .image {position:absolute;left:0;}
 #animate18 .image img {display:block;width:100%;} */
-#animate18 .video {position:absolute;left:0;width:100%;padding-bottom:94.5%;}
+#animate18 .video {position:absolute;left:20px;right:20px;padding-bottom:85%;}
 #animate18 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 #animate18 .desc {margin-top:16px;padding:0 25px;}
 
@@ -264,9 +266,9 @@ video {
 #scene15A {top:-18px;}
 #scene15A:after {content:"";position:absolute;top:18px;left:0;width:100%;bottom:0;background:#ececec;z-index:-1;}
 #animate15A .blank {padding-top:304px;padding-bottom:40px;}
-#animate15A .quote {position:absolute;left:14px;right:14px;padding:44px 42px 29px 42px;background:#fff;border-radius:25px;box-shadow:0px 2px 4px 2px rgba(0, 0, 0, 0.08);}
-#animate15A .quote:before {content:"“";position:absolute;top:8px;left:18px;font-size:70px;font-weight:600;color:#f2f2f2;z-index:0;}
-#animate15A .quote:after {content:"”";position:absolute;bottom:36px;right:20px;font-size:70px;font-weight:600;color:#f2f2f2;z-index:0;}
+#animate15A .quote {position:absolute;left:14px;right:14px;padding:44px 52px 29px 52px;background:#fff;border-radius:25px;box-shadow:0px 2px 4px 2px rgba(0, 0, 0, 0.08);}
+#animate15A .quote:before {content:"“";position:absolute;top:8px;left:28px;font-size:70px;font-weight:600;color:#f2f2f2;z-index:0;}
+#animate15A .quote:after {content:"”";position:absolute;bottom:36px;right:26px;font-size:70px;font-weight:600;color:#f2f2f2;z-index:0;}
 #animate15A .quote .message {position:relative;font-size:23px;line-height:32px;color:#999;font-weight:600;z-index:1;letter-spacing:-0.2px;}
 #animate15A .quote .message strong {color:#222;}
 #animate15A .quote .source {display:block;margin-top:34px;padding-left:5px;font-size:14px;line-height:18px;color:#888;}
