@@ -455,7 +455,6 @@
 										num.$el.html(this.val.toFixed(2)+"<em>%</em>");
 									},
 									complete: function() {
-										console.log(this);
 										num.$el.html(this.val.toFixed(2)+"<em>%</em>");
 									}
 								});
@@ -1403,7 +1402,7 @@
 					$(this).parent().removeClass("on");
 				}
 			})
-			console.log(scrollTop);
+			//console.log(scrollTop);
 		}).trigger("scroll");
 
 		$('.move-top > a').on("click", function(e){
