@@ -184,6 +184,8 @@ video {
 #animate6 .divider .image > img {display:block;width:100vw;}
 #animate6 .divider .drag {position:absolute;top:0;right:0;height:100%;}
 #animate6 .divider .drag img {height:100%;transform:translateX(-50%);}
+#animate6 .video {position:absolute;left:0;width:100%;padding-bottom:89%;}
+#animate6 .video video {position:absolute;top:0;left:0;width:100%;height:100%;}
 #animate6 .desc {margin-top:20px;padding:0 25px;}
 #animate6 .desc strong {display:block;padding-bottom:3px;color:#999;font-size:12px;}
 
